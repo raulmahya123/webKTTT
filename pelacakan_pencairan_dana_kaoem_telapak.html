@@ -1,0 +1,835 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-background":"#131e18","on-error":"#ffffff","primary-container":"#184d3b","outline":"#707974","surface-container-high":"#dfebe2","secondary-fixed":"#d3e8cf","surface-tint":"#356854","tertiary-fixed-dim":"#f7ba84","surface-variant":"#d9e6dc","inverse-on-surface":"#e7f4ea","error":"#ba1a1a","inverse-surface":"#28332d","earth-ochre":"#C28B59","on-secondary-container":"#546853","sand-border":"#E3E0D5","surface":"#f0fdf3","surface-dim":"#d0ddd4","surface-container-low":"#eaf7ed","forest-dark":"#0F3226","outline-variant":"#c0c9c2","on-error-container":"#93000a","primary":"#003626","inverse-primary":"#9cd2ba","on-primary-fixed":"#002116","charcoal-ink":"#202B25","on-tertiary-fixed-variant":"#673d12","surface-cream":"#F8F7F2","moss-muted":"#6E8771","background":"#f0fdf3","primary-fixed":"#b8eed5","surface-container-highest":"#d9e6dc","on-tertiary-container":"#e1a672","on-tertiary":"#ffffff","on-primary":"#ffffff","surface-container":"#e4f1e7","secondary":"#50634f","on-secondary":"#ffffff","tertiary-container":"#643b10","on-surface-variant":"#404944","surface-pure":"#FFFFFF","surface-bright":"#f0fdf3","secondary-container":"#d0e6cc","on-primary-container":"#88bda6","surface-container-lowest":"#ffffff","on-secondary-fixed":"#0e1f10","on-primary-fixed-variant":"#1b4f3d","primary-fixed-dim":"#9cd2ba","secondary-fixed-dim":"#b7ccb4","on-secondary-fixed-variant":"#394b38","tertiary-fixed":"#ffdcc0","error-container":"#ffdad6","tertiary":"#492600","on-surface":"#131e18","on-tertiary-fixed":"#2d1600"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","gutter":"1.5rem","space-lg":"1.75rem","margin":"1.25rem","margin-tablet":"2.5rem","space-md":"1rem","gutter-desktop":"2.5rem","margin-desktop":"4.5rem","space-xl":"3rem","space-sm":"0.5rem"},"fontFamily":{"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-sm":["Inter"],"body-md":["Inter"]},"fontSize":{"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"display":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}]}}}}</script><link rel="stylesheet" href="./assets/site.css"><script defer="" src="./assets/site.js"></script><link rel="stylesheet" href="./assets/cms-shell.css"><script defer src="./assets/cms-shell.js"></script></head><body class="kt-cms bg-surface font-body-md text-body-md text-on-surface antialiased" data-cms-role="admin"><aside class="cms-sidebar"><a class="cms-brand" href="./portal-admin.html"><img src="./assets/kaoem-telapak-logo.png" alt="Kaoem Telapak"></a><nav id="cms-nav" aria-label="Navigasi CMS"></nav><div class="cms-exit"><a class="cms-link" href="./index.html">Lihat website ↗</a><a class="cms-link" id="cms-logout" href="./masuk_pemulihan_akun_kaoem_telapak.html">Keluar</a></div></aside><header class="cms-topbar"><button type="button" class="cms-toggle" id="cms-menu-toggle" aria-expanded="false" aria-controls="cms-nav">☰ Menu</button><strong>Ruang Kelola Kaoem Telapak</strong><span id="cms-role">CMS · DEMO</span></header><main class="cms-main"><div class="flex flex-col w-full">
+<!-- Top Highlight Band: Safeguard Anti Self-Marked Paid Mandate -->
+<div class="bg-forest-dark text-on-primary px-8 py-4 shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<div class="p-2 rounded bg-primary-container text-tertiary-fixed flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-earth-ochre font-bold">Protokol Pemisahan Otoritas (Dual Control)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-earth-ochre"></span>
+<span class="font-label-sm text-label-sm text-surface-container-highest text-opacity-80">Strict Audit Trail ISO 37001</span>
+</div>
+<p class="font-body-sm text-body-sm text-inverse-on-surface mt-0.5 max-w-4xl">
+<strong class="text-on-primary">Pemberitahuan Sistem:</strong> Penerima dana / inisiator lapangan tidak memiliki hak untuk menandai pengajuannya sendiri sebagai <span class="text-tertiary-fixed underline decoration-earth-ochre">"Sudah Dibayar"</span>. Status mutlak divalidasi oleh Otoritas Kasir/Bendahara setelah rekonsiliasi mutasi rekening koran dan batch statement terkonfirmasi.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-earth-ochre">lock_clock</span>
+<span>Anti Self-Marked Active</span>
+</div>
+</div>
+</div>
+<div class="px-8 py-8 space-y-8">
+<!-- Header Section with Breadcrumb Context and Action Trigger -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2">
+<div class="space-y-1">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-moss-muted uppercase tracking-wider font-semibold">
+<span>Modul Perbendaharaan</span>
+<span>/</span>
+<span class="text-primary font-bold">Disbursement Lifecycle</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Sistem Pelacakan Pencairan Dana &amp; Distribusi Kas Lapangan
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Memastikan penyaluran dana hibah proyek tepat waktu, terenkripsi, dan sesuai kepatuhan perbankan melalui tata kelola akun terpisah dan verifikasi kliring otomatis.
+        </p>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md font-semibold flex items-center gap-2 transition-all shadow-sm" id="btn-batch-modal" type="button">
+<span class="material-symbols-outlined text-lg">fact_check</span>
+<span>Ekspor Rekap Bank (CSV)</span>
+</button>
+<button class="px-5 py-2.5 rounded bg-primary-container hover:bg-forest-dark text-on-primary font-label-md text-label-md font-semibold flex items-center gap-2 transition-all shadow-md" id="btn-reconcile-trigger" type="button">
+<span class="material-symbols-outlined text-lg text-tertiary-fixed">cloud_sync</span>
+<span>Unggah Mutasi Rekon AI</span>
+</button>
+</div>
+</div>
+<!-- 4 High-Impact KPI Cards with SVG Analytics & Contrast Hierarchy -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+<!-- Card 1 -->
+<div class="bg-surface-pure rounded p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted block">Telah Dicairkan Bulan Ini</span>
+<div class="mt-2 font-headline-md text-headline-md text-primary font-bold tracking-tight">
+              Rp 642.500.000
+            </div>
+</div>
+<div class="p-2.5 rounded bg-surface-container text-primary">
+<span class="material-symbols-outlined text-2xl">check_circle</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-sm text-label-sm font-semibold text-primary">
+<span class="material-symbols-outlined text-sm">inventory_2</span>
+<span>12 Batch Transfer Kasir</span>
+</div>
+<span class="font-label-sm text-label-sm text-moss-muted">Okt 2026</span>
+</div>
+<div class="mt-2 w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-pure rounded p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-earth-ochre font-bold block">Siap Dicairkan (Ready)</span>
+<div class="mt-2 font-headline-md text-headline-md text-earth-ochre font-bold tracking-tight">
+              Rp 124.700.000
+            </div>
+</div>
+<div class="p-2.5 rounded bg-tertiary-fixed text-tertiary">
+<span class="material-symbols-outlined text-2xl">pending_actions</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-sm text-label-sm font-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-earth-ochre animate-pulse"></span>
+<span>3 Berkas Menunggu Eksekusi</span>
+</div>
+<span class="font-label-sm text-label-sm text-earth-ochre font-semibold">Priority 1</span>
+</div>
+<div class="mt-2 w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-earth-ochre h-full rounded-full" style="width: 45%"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-pure rounded p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted block">Rata-rata Waktu Proses</span>
+<div class="mt-2 font-headline-md text-headline-md text-primary font-bold tracking-tight">
+              1.8 <span class="text-headline-sm font-semibold">Hari Kerja</span>
+</div>
+</div>
+<div class="p-2.5 rounded bg-secondary-container text-secondary">
+<span class="material-symbols-outlined text-2xl">speed</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>Lebih Cepat dari Target</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-moss-muted">SLA Target &lt; 3 Hari</span>
+</div>
+<div class="mt-2 w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 60%"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-pure rounded p-5 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted block">Rekonsiliasi Bank Pending</span>
+<div class="mt-2 font-headline-md text-headline-md text-on-surface font-bold tracking-tight">
+              1 <span class="text-headline-sm font-semibold">Transaksi</span>
+</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-high text-primary-container">
+<span class="material-symbols-outlined text-2xl">hourglass_bottom</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-moss-muted">
+<span class="material-symbols-outlined text-sm">account_balance</span>
+<span>Kliring BI-FAST / Valas</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary">Live Sync</span>
+</div>
+<div class="mt-2 w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 25%"></div>
+</div>
+</div>
+</div>
+<!-- Quick Visual Editorial Callout Strip: Multi-Project Field Liquidity Health -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div class="lg:col-span-2 bg-surface-pure rounded p-6 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-4">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted font-bold">Proyeksi Likuiditas Lapangan</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Rasio Penyerapan Kas per Rekening Hibah Khusus</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-moss-muted">Dicairkan</span>
+<span class="w-3 h-3 rounded bg-surface-container ml-2"></span>
+<span class="font-label-sm text-label-sm text-moss-muted">Sisa Alokasi Termin</span>
+</div>
+</div>
+<div class="space-y-4">
+<!-- Item 1 -->
+<div>
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="font-semibold text-on-surface">Bank Mandiri - Hibah Rainforest Alliance (Proyek Saunulu Seram &amp; Halmahera)</span>
+<span class="font-bold text-primary">Rp 280.000.000 / Rp 350.000.000 (80%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 80%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div>
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="font-semibold text-on-surface">BNI - Hibah EIA UK (Investigasi Kayu Lapangan &amp; Perlindungan Adat)</span>
+<span class="font-bold text-primary">Rp 190.500.000 / Rp 250.000.000 (76.2%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 76.2%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div>
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="font-semibold text-on-surface">BCA - Hibah Samdhana (Masyarakat Adat Dayak Muara Tae &amp; Boven Digoel)</span>
+<span class="font-bold text-primary">Rp 172.000.000 / Rp 200.000.000 (86%)</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-earth-ochre h-full" style="width: 86%"></div>
+</div>
+</div>
+</div>
+<div class="mt-5 pt-4 bg-surface-container-low p-3.5 rounded flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2 text-moss-muted">
+<span class="material-symbols-outlined text-primary text-base">info</span>
+<span>Setiap transfer wajib menyertakan kode batch unik pada berita acara transfer bank (RTGS / BI-FAST).</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase">Regulasi BI Terpadu</span>
+</div>
+</div>
+<!-- Quick AI Reconciliation Dropzone Card -->
+<div class="bg-surface-cream rounded p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 text-earth-ochre mb-2">
+<span class="material-symbols-outlined text-xl">auto_fix_high</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Pencocokan Cepat AI</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink">
+            Rekonsiliasi Mutasi Bank Otomatis
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+            Tarik atau unggah dokumen laporan rekening koran (CSV/MT940/PDF). Mesin pencocokan cerdas akan menyandingkan nomor DISB-ID secara seketika.
+          </p>
+<div class="mt-4 p-5 rounded bg-surface-pure hover:bg-surface-container-lowest transition-all cursor-pointer flex flex-col items-center justify-center text-center group" id="dropzone">
+<span class="material-symbols-outlined text-3xl text-moss-muted group-hover:text-primary transition-colors">cloud_upload</span>
+<span class="font-label-md text-label-md font-bold text-primary mt-2">Pilih Berkas Koran Bank</span>
+<span class="font-label-sm text-label-sm text-moss-muted mt-0.5">Mendukung format .CSV, .PDF, atau .TXT (Max 15MB)</span>
+<input accept=".csv,.pdf,.txt" class="hidden" id="bank-file-input" type="file">
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-semibold text-forest-dark">Algoritma Fuzzy Matching v2.4</span>
+</div>
+<button class="font-label-sm text-label-sm font-bold text-earth-ochre hover:text-tertiary" onclick="document.getElementById('bank-file-input').click()" type="button">
+            Mulai Analisis →
+          </button>
+</div>
+</div>
+</div>
+<!-- Filter & Tabbed Controls Section -->
+<div class="bg-surface-pure rounded p-6 shadow-sm space-y-6">
+<!-- Status Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-4 bg-surface-container-low p-2 rounded">
+<div class="flex flex-wrap items-center gap-1.5" id="disb-tabs">
+<button class="tab-btn px-4 py-2 rounded font-label-md text-label-md font-semibold transition-all bg-primary-container text-on-primary shadow-sm" data-tab="all" type="button">
+            Semua Pencairan (16)
+          </button>
+<button class="tab-btn px-4 py-2 rounded font-label-md text-label-md font-semibold transition-all text-on-surface-variant hover:bg-surface-container" data-tab="ready" type="button">
+            Siap Bayar / Ready (3)
+          </button>
+<button class="tab-btn px-4 py-2 rounded font-label-md text-label-md font-semibold transition-all text-on-surface-variant hover:bg-surface-container" data-tab="processing" type="button">
+            Sedang Diproses Kasir (1)
+          </button>
+<button class="tab-btn px-4 py-2 rounded font-label-md text-label-md font-semibold transition-all text-on-surface-variant hover:bg-surface-container" data-tab="paid" type="button">
+            Berhasil Ditransfer / Paid (11)
+          </button>
+<button class="tab-btn px-4 py-2 rounded font-label-md text-label-md font-semibold transition-all text-on-surface-variant hover:bg-surface-container" data-tab="hold" type="button">
+            Tertunda / Hold (1)
+          </button>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded bg-surface-pure text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-moss-muted text-base">filter_alt</span>
+<span class="font-label-sm text-label-sm text-moss-muted uppercase font-bold">Total Nilai Ditampilkan:</span>
+<span class="font-bold text-primary font-headline-sm text-title-md">Rp 767.200.000</span>
+</div>
+</div>
+<!-- Advanced Filter Form Inputs: Bank Sumber, Tanggal, Mitra, Metode -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Filter 1: Bank Sumber -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted font-bold">
+            Rekening Sumber (Dedicated Grant)
+          </label>
+<div class="relative">
+<select class="w-full bg-surface-pure px-3.5 py-2.5 rounded font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-low appearance-none cursor-pointer" id="filter-bank">
+<option value="">Semua Rekening Hibah Terpisah</option>
+<option selected="" value="mandiri">Bank Mandiri - Hibah Rainforest Alliance</option>
+<option value="bni">BNI - Hibah EIA UK</option>
+<option value="bca">BCA - Hibah Samdhana</option>
+<option value="bri">BRI - Operasional Yayasan KT</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-moss-muted pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<!-- Filter 2: Mitra Lapangan -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted font-bold">
+            Penerima / Mitra Komunitas
+          </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-moss-muted text-base">corporate_fare</span>
+<input class="w-full bg-surface-pure pl-9 pr-3.5 py-2.5 rounded font-body-sm text-body-sm text-on-surface placeholder:text-moss-muted focus:outline-none focus:bg-surface-container-low" placeholder="Cari nama penerima atau lembaga..." type="text">
+</div>
+</div>
+<!-- Filter 3: Metode Pencairan -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted font-bold">
+            Metode Pembayaran
+          </label>
+<div class="relative">
+<select class="w-full bg-surface-pure px-3.5 py-2.5 rounded font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-low appearance-none cursor-pointer">
+<option value="">Semua Metode Penyaluran</option>
+<option selected="" value="bank">Transfer Bank (Kliring / RTGS / BI-FAST)</option>
+<option value="cash">Tunai Kasir Tapak (Field Imprest)</option>
+<option value="remittance">Remittance Kantor Pos Terpencil</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-moss-muted pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<!-- Filter 4: Rentang Tanggal -->
+<div class="space-y-1.5">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted font-bold">
+            Periode Rencana Bayar
+          </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-moss-muted text-base">date_range</span>
+<input class="w-full bg-surface-pure pl-9 pr-3.5 py-2.5 rounded font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-low" type="text" value="01 Okt 2026 - 31 Okt 2026">
+</div>
+</div>
+</div>
+</div>
+<!-- Table Section: Disbursement Records Table (Master Records) -->
+<div class="bg-surface-pure rounded shadow-sm overflow-hidden">
+<div class="px-6 py-4 bg-surface-container-low flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="font-title-md text-title-md font-bold text-primary">Daftar Transaksi Pencairan Dana Proyek</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">Live Ledger</span>
+</div>
+<div class="flex items-center gap-3 text-body-sm font-body-sm text-moss-muted">
+<span>Menampilkan 4 dari 16 Berkas</span>
+<span class="h-4 w-px bg-sand-border"></span>
+<button class="text-primary hover:underline font-semibold flex items-center gap-1 font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-sm">refresh</span> Refresh Status
+          </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-cream text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-6 font-bold">Ref Pencairan &amp; Pengajuan</th>
+<th class="py-3.5 px-6 font-bold">Penerima Manfaat &amp; Akun Bank</th>
+<th class="py-3.5 px-6 font-bold">Proyek &amp; Pos Anggaran</th>
+<th class="py-3.5 px-6 font-bold text-right">Nilai Bersih (IDR)</th>
+<th class="py-3.5 px-6 font-bold text-center">Pajak (PPh)</th>
+<th class="py-3.5 px-6 font-bold">Tgl Bayar &amp; Status</th>
+<th class="py-3.5 px-6 font-bold">Resi &amp; Otorisasi</th>
+<th class="py-3.5 px-6 font-bold text-right">Tindakan Kasir</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm">
+<!-- Row 1: Ready to pay / Pending Transfer Action (DISB-2026-10-092) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-lowest">
+<td class="py-4 px-6 align-top">
+<div class="font-label-md text-label-md font-bold text-primary">DISB-2026-10-092</div>
+<div class="font-label-sm text-label-sm text-moss-muted mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">link</span>
+<span>REQ-MLK-2026-041</span>
+</div>
+<span class="inline-block mt-2 px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-forest-dark font-semibold">
+                  Batch #92-S1
+                </span>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-label-md text-label-md font-bold text-on-surface">Annas Radin Syarif</div>
+<div class="text-moss-muted font-body-sm text-body-sm mt-0.5">Bank Mandiri (IDR)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5 bg-surface-cream px-2 py-0.5 rounded inline-block">
+                  137-00-9821-4412
+                </div>
+<div class="flex items-center gap-1 mt-1 text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Nama Rekening Sesuai KTP</span>
+</div>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-semibold text-charcoal-ink">Proyek Saunulu Seram</div>
+<div class="text-moss-muted text-xs mt-0.5">Pos 3.2.1: Pemetaan Partisipatif Hutan Adat</div>
+<div class="text-xs text-on-surface-variant mt-1">Sumber: Mandiri (Rainforest Alliance)</div>
+</td>
+<td class="py-4 px-6 align-top text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-primary">Rp 48.500.000</div>
+<div class="text-xs text-moss-muted mt-0.5">Uang Muka Kerja (Advance)</div>
+</td>
+<td class="py-4 px-6 align-top text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-moss-muted font-semibold">
+                  Rp 0 (Advance)
+                </span>
+<span class="block text-xs text-moss-muted mt-1">PPh nihil</span>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-semibold text-on-surface">22 Okt 2026 (Est)</div>
+<div class="mt-1.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+                    Siap Diterbitkan SPK - Kasir
+                  </span>
+</div>
+<div class="text-xs text-earth-ochre mt-1 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">lock</span>
+<span>Terkunci dari Pemohon</span>
+</div>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="text-xs text-moss-muted italic">Menunggu eksekusi transfer bank</div>
+<div class="mt-2 text-xs text-on-surface-variant">
+<span class="font-semibold">Otorisasi Level 1:</span> Fin. Controller (OK)
+                </div>
+</td>
+<td class="py-4 px-6 align-top text-right">
+<button class="px-3.5 py-2 rounded bg-earth-ochre hover:bg-tertiary text-on-primary font-label-sm text-label-sm font-semibold transition-all shadow-sm flex items-center gap-1.5 ml-auto" onclick="openDisburseModal('DISB-2026-10-092', 'Annas Radin Syarif', '48.500.000', 'Bank Mandiri 137-00-9821-4412')" type="button">
+<span class="material-symbols-outlined text-sm">payment</span>
+<span>Proses Pembayaran Bank</span>
+</button>
+<button class="mt-1.5 text-xs text-moss-muted hover:text-primary transition-colors block ml-auto" type="button">
+                  Tinjau Voucher SPK →
+                </button>
+</td>
+</tr>
+<!-- Row 2: Paid Transaction (DISB-2026-10-088) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-6 align-top">
+<div class="font-label-md text-label-md font-bold text-primary">DISB-2026-10-088</div>
+<div class="font-label-sm text-label-sm text-moss-muted mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">link</span>
+<span>REQ-KTM-2026-074</span>
+</div>
+<span class="inline-block mt-2 px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-forest-dark font-semibold">
+                  Batch #88-KT
+                </span>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-label-md text-label-md font-bold text-on-surface">Lembaga Adat Dayak Benuaq Muara Tae</div>
+<div class="text-moss-muted font-body-sm text-body-sm mt-0.5">Bank Kaltimtara (Kas Daerah)</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5 bg-surface-cream px-2 py-0.5 rounded inline-block">
+                  008-21-00918-0
+                </div>
+<div class="flex items-center gap-1 mt-1 text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-xs">account_balance</span>
+<span>Rekening Lembaga Terverifikasi</span>
+</div>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-semibold text-charcoal-ink">Revitalisasi Hutan Adat Muara Tae</div>
+<div class="text-moss-muted text-xs mt-0.5">Pos 2.1.4: Pengadaan Bibit Meranti &amp; Patroli</div>
+<div class="text-xs text-on-surface-variant mt-1">Sumber: BCA (Hibah Samdhana)</div>
+</td>
+<td class="py-4 px-6 align-top text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">Rp 62.000.000</div>
+<div class="text-xs text-moss-muted mt-0.5">Termin II (60%) Selesai</div>
+</td>
+<td class="py-4 px-6 align-top text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-moss-muted font-semibold">
+                  Rp 0 (Komunitas)
+                </span>
+<span class="block text-xs text-moss-muted mt-1">Sertifikasi PPh Pasal 4(2) Bebas</span>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-semibold text-on-surface">19 Okt 2026</div>
+<div class="mt-1.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                    Berhasil Ditransfer / Paid ✓
+                  </span>
+</div>
+<div class="text-xs text-moss-muted mt-1 font-mono">Ref: TRF-MND-99281726</div>
+</td>
+<td class="py-4 px-6 align-top">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold transition-colors" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">
+<span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+<span>Unduh Resi (.PDF)</span>
+</a>
+<div class="mt-2 text-xs text-on-surface-variant">
+<span class="font-semibold">Kasir:</span> Hendra (19 Okt, 14:10)
+                </div>
+</td>
+<td class="py-4 px-6 align-top text-right">
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-all" type="button">
+                  Detail Rekonsiliasi
+                </button>
+</td>
+</tr>
+<!-- Row 3: Paid Transaction (DISB-2026-10-085) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-6 align-top">
+<div class="font-label-md text-label-md font-bold text-primary">DISB-2026-10-085</div>
+<div class="font-label-sm text-label-sm text-moss-muted mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">link</span>
+<span>REQ-BVD-2026-012</span>
+</div>
+<span class="inline-block mt-2 px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-forest-dark font-semibold">
+                  Batch #85-BD
+                </span>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-label-md text-label-md font-bold text-on-surface">Lukas Waromi</div>
+<div class="text-moss-muted font-body-sm text-body-sm mt-0.5">BRI Cabang Tanah Merah</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5 bg-surface-cream px-2 py-0.5 rounded inline-block">
+                  7019-01-00281-53-1
+                </div>
+<div class="flex items-center gap-1 mt-1 text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span>Penerima Mandat Wilayah Adat</span>
+</div>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-semibold text-charcoal-ink">Pengawasan Sawit Boven Digoel</div>
+<div class="text-moss-muted text-xs mt-0.5">Pos 1.4: Investigasi Spasial Citra Drone &amp; Bahan Bakar Speedboat</div>
+<div class="text-xs text-on-surface-variant mt-1">Sumber: BNI (Hibah EIA UK)</div>
+</td>
+<td class="py-4 px-6 align-top text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">Rp 28.500.000</div>
+<div class="text-xs text-moss-muted mt-0.5">Disbursement Lapangan</div>
+</td>
+<td class="py-4 px-6 align-top text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-moss-muted font-semibold">
+                  Rp 0
+                </span>
+<span class="block text-xs text-moss-muted mt-1">Biaya Operasional</span>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-semibold text-on-surface">17 Okt 2026</div>
+<div class="mt-1.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                    Berhasil Ditransfer / Paid ✓
+                  </span>
+</div>
+<div class="text-xs text-moss-muted mt-1 font-mono">Ref: TRF-BRI-77182903</div>
+</td>
+<td class="py-4 px-6 align-top">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold transition-colors" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">
+<span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+<span>Unduh Resi (.PDF)</span>
+</a>
+<div class="mt-2 text-xs text-on-surface-variant">
+<span class="font-semibold">Kasir:</span> Hendra (17 Okt, 11:24)
+                </div>
+</td>
+<td class="py-4 px-6 align-top text-right">
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-all" type="button">
+                  Detail Rekonsiliasi
+                </button>
+</td>
+</tr>
+<!-- Row 4: Paid Large Grant Transaction (DISB-2026-10-081) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-6 align-top">
+<div class="font-label-md text-label-md font-bold text-primary">DISB-2026-10-081</div>
+<div class="font-label-sm text-label-sm text-moss-muted mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">link</span>
+<span>REQ-KOP-2026-004</span>
+</div>
+<span class="inline-block mt-2 px-2 py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-forest-dark font-semibold">
+                  Batch #81-KHJL
+                </span>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-label-md text-label-md font-bold text-on-surface">Koperasi KHJL Konawe Selatan</div>
+<div class="text-moss-muted font-body-sm text-body-sm mt-0.5">Bank Mandiri Kendari</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-0.5 bg-surface-cream px-2 py-0.5 rounded inline-block">
+                  162-00-11928-82
+                </div>
+<div class="flex items-center gap-1 mt-1 text-primary text-xs font-semibold">
+<span class="material-symbols-outlined text-xs">verified_user</span>
+<span>Badan Hukum Koperasi Terverifikasi</span>
+</div>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-semibold text-charcoal-ink">Sertifikasi FSC Kayu Jati Rakyat</div>
+<div class="text-moss-muted text-xs mt-0.5">Pos 4.1: Audit Tahunan &amp; Pelatihan SVLK Petani Hutan</div>
+<div class="text-xs text-on-surface-variant mt-1">Sumber: Mandiri (Rainforest Alliance)</div>
+</td>
+<td class="py-4 px-6 align-top text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">Rp 110.000.000</div>
+<div class="text-xs text-moss-muted mt-0.5">Termin I Pencairan Penuh</div>
+</td>
+<td class="py-4 px-6 align-top text-center">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-moss-muted font-semibold">
+                  Rp 2.200.000 (PPh 23)
+                </span>
+<span class="block text-xs text-moss-muted mt-1">Dipotong &amp; Bukti Potong Terbit</span>
+</td>
+<td class="py-4 px-6 align-top">
+<div class="font-semibold text-on-surface">15 Okt 2026</div>
+<div class="mt-1.5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-xs text-primary">check_circle</span>
+                    Berhasil Ditransfer / Paid ✓
+                  </span>
+</div>
+<div class="text-xs text-moss-muted mt-1 font-mono">Ref: TRF-MND-88391002</div>
+</td>
+<td class="py-4 px-6 align-top">
+<a class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold transition-colors" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">
+<span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+<span>Unduh Resi (.PDF)</span>
+</a>
+<div class="mt-2 text-xs text-on-surface-variant">
+<span class="font-semibold">Kasir:</span> Diah Rahmawati (15 Okt)
+                </div>
+</td>
+<td class="py-4 px-6 align-top text-right">
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-all" type="button">
+                  Detail Rekonsiliasi
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Ledger Summary Footer -->
+<div class="px-6 py-4 bg-surface-cream border-t border-sand-border flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="font-label-sm text-label-sm text-moss-muted">
+          Showing <span class="font-bold text-on-surface">1 - 4</span> of <span class="font-bold text-on-surface">16</span> items • Disbursed Subtotal: <span class="font-bold text-primary font-mono">Rp 249.000.000</span>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="p-1.5 rounded bg-surface-pure text-moss-muted hover:text-on-surface hover:bg-surface-container disabled:opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold" type="button">1</button>
+<button class="px-3 py-1 rounded bg-surface-pure hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm" type="button">2</button>
+<button class="px-3 py-1 rounded bg-surface-pure hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm" type="button">3</button>
+<button class="p-1.5 rounded bg-surface-pure text-on-surface-variant hover:text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Editorial Cartographic & Institutional Transparency Field Note -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Field Dispatch Story: Saunulu Seram -->
+<div class="lg:col-span-8 bg-surface-pure rounded p-6 shadow-sm flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+              Catatan Penyaluran Tapak Terkini
+            </span>
+<span class="text-moss-muted text-xs">• Pulau Seram, Maluku Tengah</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-forest-dark font-bold">
+            Pencairan Cepat Logistik Ekspedisi Adat Saunulu
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Penyaluran berkas DISB-2026-10-092 ke rekening tim lapangan Saunulu Seram dialokasikan untuk pembiayaan logistik kapal motor nelayan, pemetaan GPS batas petuanan adat, dan konsumsi musyawarah saniri negeri. Sistem memastikan dana advance langsung terkunci dalam jurnal pengawasan hingga LPJ fisik diverifikasi.
+          </p>
+</div>
+<div class="mt-6 pt-4 border-t border-surface-container flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-primary font-bold">
+              AS
+            </div>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Annas Radin Syarif</div>
+<div class="font-label-sm text-label-sm text-moss-muted">Koordinator Wilayah Maluku - Kaoem Telapak</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-earth-ochre text-lg">verified</span>
+<span class="font-label-sm text-label-sm font-bold text-forest-dark uppercase">SOP Safeguard Lapangan Dipenuhi</span>
+</div>
+</div>
+</div>
+<!-- Real-time Transfer Validation Rules -->
+<div class="lg:col-span-4 bg-forest-dark text-on-primary rounded p-6 shadow-sm flex flex-col justify-between">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-earth-ochre font-bold">Safeguard Checklist</span>
+<span class="material-symbols-outlined text-tertiary-fixed">rule</span>
+</div>
+<h4 class="font-title-md text-title-md font-bold text-on-primary">
+            Ketentuan Eksekusi Kasir (Treasury Policy)
+          </h4>
+<ul class="space-y-2.5 font-body-sm text-body-sm text-surface-container-highest">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-base text-tertiary-fixed mt-0.5">check_circle</span>
+<span>Nomor rekening penerima wajib terdaftar pada database rekanan terakreditasi Kaoem Telapak.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-base text-tertiary-fixed mt-0.5">check_circle</span>
+<span>Transaksi di atas Rp 50.000.000 mewajibkan otorisasi token token ganda (Maker &amp; Approver).</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-base text-tertiary-fixed mt-0.5">check_circle</span>
+<span>Resi transfer bank wajib diunggah dalam tempo maksimal 1x24 jam setelah kliring berhasil.</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 pt-4 border-t border-primary-container text-xs text-moss-muted">
+          Penyimpangan prosedur akan memicu status auto-freeze oleh Safeguard Auditor.
+        </div>
+</div>
+</div>
+</div>
+<!-- Modal Interactive Backdrop: Proses Pembayaran Bank (Kasir Maker/Checker) -->
+<div class="fixed inset-0 z-50 bg-charcoal-ink/60 backdrop-blur-sm hidden flex items-center justify-center p-4" id="disburse-modal">
+<div class="bg-surface-pure rounded-lg shadow-2xl max-w-xl w-full p-6 space-y-6 animate-fade-in relative">
+<div class="flex items-start justify-between pb-3 border-b border-sand-border">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-earth-ochre font-bold block">Treasury Cashier Action</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary mt-1">Eksekusi Pencairan Bank</h3>
+</div>
+<button class="text-moss-muted hover:text-on-surface p-1 rounded hover:bg-surface-container transition-colors" onclick="closeDisburseModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Detail Ringkasan Pembayaran -->
+<div class="bg-surface-cream rounded p-4 space-y-3 font-body-sm text-body-sm">
+<div class="flex justify-between">
+<span class="text-moss-muted">Nomor Referensi DISB:</span>
+<span class="font-bold text-primary font-mono" id="modal-disb-id">DISB-2026-10-092</span>
+</div>
+<div class="flex justify-between">
+<span class="text-moss-muted">Penerima Dana:</span>
+<span class="font-bold text-on-surface" id="modal-payee">Annas Radin Syarif</span>
+</div>
+<div class="flex justify-between">
+<span class="text-moss-muted">Rekening Tujuan:</span>
+<span class="font-mono text-on-surface" id="modal-account">Bank Mandiri 137-00-9821-4412</span>
+</div>
+<div class="flex justify-between pt-2 border-t border-sand-border text-base">
+<span class="font-semibold text-charcoal-ink">Total Nominal Bersih:</span>
+<span class="font-bold text-primary font-headline-sm text-headline-sm" id="modal-amount">Rp 48.500.000</span>
+</div>
+</div>
+<!-- Formulir Kasir -->
+<form class="space-y-4" id="disburse-form">
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted font-bold">
+            Rekening Debet Sumber Dana
+          </label>
+<select class="w-full bg-surface-cream p-2.5 rounded font-body-sm text-body-sm text-on-surface border border-sand-border focus:outline-none focus:border-primary-container">
+<option value="mandiri-rf">Bank Mandiri - Hibah Rainforest Alliance (137-00-2211-901)</option>
+<option value="bni-eia">BNI - Hibah EIA UK (081-992-120)</option>
+<option value="bca-samdhana">BCA - Hibah Samdhana (731-019-281)</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted font-bold">
+            Nomor Referensi Transaksi Bank (Journal Ref / Ref Transaksi Internet Banking)
+          </label>
+<input class="w-full bg-surface-pure p-2.5 rounded font-body-sm text-body-sm border border-sand-border focus:outline-none focus:border-primary-container" placeholder="Contoh: TRF-MND-99281920" required="" type="text">
+</div>
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted font-bold">
+            Unggah Bukti Transfer / Resi Transaksi (PDF / JPG)
+          </label>
+<input class="w-full text-xs text-moss-muted file:mr-3 file:py-2 file:px-3 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-primary-container file:text-on-primary hover:file:bg-forest-dark cursor-pointer" required="" type="file">
+</div>
+<div class="p-3 rounded bg-surface-container-low text-xs text-moss-muted flex items-start gap-2">
+<span class="material-symbols-outlined text-sm text-primary mt-0.5">verified_user</span>
+<span>Tindakan ini akan mengunci status permohonan secara permanen dan menerbitkan notifikasi otomatis kepada penerima manfaat dan Manajer Keuangan.</span>
+</div>
+<div class="flex items-center justify-end gap-3 pt-4 border-t border-sand-border">
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold" onclick="closeDisburseModal()" type="button">
+            Batal
+          </button>
+<button class="px-5 py-2 rounded bg-primary-container hover:bg-forest-dark text-on-primary font-label-md text-label-md font-semibold shadow-md flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-sm text-tertiary-fixed">check_circle</span>
+<span>Konfirmasi &amp; Tandai Ditransfer</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<div class="bg-forest-dark text-on-primary px-5 py-3.5 rounded shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-earth-ochre text-xl">check_circle</span>
+<div>
+<div class="font-label-md text-label-md font-bold" id="toast-title">Pencairan Berhasil Diverifikasi</div>
+<div class="font-body-sm text-body-sm text-surface-container-highest" id="toast-desc">Data mutasi perbankan telah disinkronkan ke buku besar.</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tab Switching Behavior
+  const tabButtons = document.querySelectorAll('.tab-btn');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabButtons.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+        b.classList.add('text-on-surface-variant');
+      });
+      btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      btn.classList.remove('text-on-surface-variant');
+      
+      showToast('Filter Diterapkan', 'Menampilkan data status: ' + btn.innerText.trim());
+    });
+  });
+
+  // Modal Functions
+  const modal = document.getElementById('disburse-modal');
+  function openDisburseModal(disbId, payee, amount, account) {
+    document.getElementById('modal-disb-id').innerText = disbId;
+    document.getElementById('modal-payee').innerText = payee;
+    document.getElementById('modal-amount').innerText = 'Rp ' + amount;
+    document.getElementById('modal-account').innerText = account;
+    modal.classList.remove('hidden');
+  }
+
+  function closeDisburseModal() {
+    modal.classList.add('hidden');
+  }
+
+  // Handle Form Submission
+  document.getElementById('disburse-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    closeDisburseModal();
+    showToast('Pencairan Dana Berhasil', 'Bukti transfer diunggah & status kasir berubah menjadi Paid ✓');
+  });
+
+  // Reconcile Trigger
+  document.getElementById('btn-reconcile-trigger').addEventListener('click', function() {
+    document.getElementById('bank-file-input').click();
+  });
+
+  document.getElementById('bank-file-input').addEventListener('change', function(e) {
+    if (e.target.files && e.target.files[0]) {
+      showToast('Pencocokan AI Dimulai', 'Menganalisis ' + e.target.files[0].name + ' dengan basis data DISB...');
+    }
+  });
+
+  // Toast Function
+  function showToast(title, desc) {
+    const toast = document.getElementById('toast');
+    document.getElementById('toast-title').innerText = title;
+    document.getElementById('toast-desc').innerText = desc;
+    toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+    }, 4000);
+  }
+</script></main><footer class="cms-footer">Kaoem Telapak · CMS demo lokal</footer></body></html>

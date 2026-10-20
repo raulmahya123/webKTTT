@@ -1,0 +1,615 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#2d1600","tertiary-container":"#643b10","on-primary-fixed":"#002116","primary-container":"#184d3b","on-surface-variant":"#404944","tertiary":"#492600","on-secondary-container":"#546853","surface-container":"#e4f1e7","surface-container-low":"#eaf7ed","sand-border":"#E3E0D5","surface-tint":"#356854","on-tertiary-fixed-variant":"#673d12","background":"#f0fdf3","inverse-on-surface":"#e7f4ea","primary-fixed":"#b8eed5","on-tertiary":"#ffffff","error":"#ba1a1a","surface":"#f0fdf3","primary-fixed-dim":"#9cd2ba","secondary-fixed":"#d3e8cf","surface-container-highest":"#d9e6dc","tertiary-fixed":"#ffdcc0","on-surface":"#131e18","surface-container-lowest":"#ffffff","inverse-surface":"#28332d","surface-cream":"#F8F7F2","inverse-primary":"#9cd2ba","outline":"#707974","secondary-fixed-dim":"#b7ccb4","on-secondary-fixed-variant":"#394b38","outline-variant":"#c0c9c2","on-error-container":"#93000a","secondary":"#50634f","on-primary-container":"#88bda6","error-container":"#ffdad6","surface-dim":"#d0ddd4","on-primary":"#ffffff","on-secondary-fixed":"#0e1f10","surface-container-high":"#dfebe2","on-tertiary-container":"#e1a672","on-background":"#131e18","surface-pure":"#FFFFFF","tertiary-fixed-dim":"#f7ba84","secondary-container":"#d0e6cc","surface-variant":"#d9e6dc","moss-muted":"#6E8771","earth-ochre":"#C28B59","on-error":"#ffffff","charcoal-ink":"#202B25","on-primary-fixed-variant":"#1b4f3d","forest-dark":"#0F3226","surface-bright":"#f0fdf3","on-secondary":"#ffffff","primary":"#003626"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-desktop":"4.5rem","margin":"1.25rem","space-xl":"3rem","space-xs":"0.25rem","gutter-desktop":"2.5rem","margin-tablet":"2.5rem","space-md":"1rem","gutter":"1.5rem","space-lg":"1.75rem","space-sm":"0.5rem"},fontFamily:{"display-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"],"label-sm":["Inter"]},fontSize:{"display-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}],"display":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}]}}}}</script><link rel="stylesheet" href="./assets/site.css"><script defer="" src="./assets/site.js"></script><link rel="stylesheet" href="./assets/cms-shell.css"><script defer src="./assets/cms-shell.js"></script></head><body class="kt-cms bg-surface-cream font-body-md text-on-surface antialiased" data-cms-role="admin"><aside class="cms-sidebar"><a class="cms-brand" href="./portal-admin.html"><img src="./assets/kaoem-telapak-logo.png" alt="Kaoem Telapak"></a><nav id="cms-nav" aria-label="Navigasi CMS"></nav><div class="cms-exit"><a class="cms-link" href="./index.html">Lihat website ↗</a><a class="cms-link" id="cms-logout" href="./masuk_pemulihan_akun_kaoem_telapak.html">Keluar</a></div></aside><header class="cms-topbar"><button type="button" class="cms-toggle" id="cms-menu-toggle" aria-expanded="false" aria-controls="cms-nav">☰ Menu</button><strong>Ruang Kelola Kaoem Telapak</strong><span id="cms-role">CMS · DEMO</span></header><main class="cms-main"><div class="flex flex-col w-full space-y-space-lg pb-space-xl">
+<!-- Top Editorial Header & Strategic Health Overview -->
+<section class="bg-surface-pure rounded-xl p-space-lg shadow-sm relative overflow-hidden">
+<div class="absolute right-0 top-0 w-96 h-full bg-gradient-to-l from-surface-container-low/60 to-transparent pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md relative z-10">
+<div class="max-w-3xl space-y-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase font-bold tracking-wider">
+            Fase 4 • Monev Tapak
+          </span>
+<span class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary inline-block animate-pulse"></span>
+            Sinkronisasi Geospasial Aktif
+          </span>
+<span class="text-moss-muted font-label-sm text-label-sm">ID: KT-PRJ-2023-ML01</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-charcoal-ink font-bold tracking-tight">
+          Dashboard Monitoring &amp; Evaluasi Kinerja Tapak
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Pemantauan real-time ketercapaian target fisik, linimasa pelaksanaan, kepatuhan safeguard, dan sinkronisasi geospasial tapak Maluku.
+        </p>
+</div>
+<!-- Health Badges Matrix -->
+<div class="flex flex-wrap items-center gap-space-sm self-start lg:self-center">
+<div class="bg-surface-cream px-space-md py-space-sm rounded-lg flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-moss-muted uppercase tracking-wider">Status Proyek</div>
+<div class="font-title-md text-title-md text-forest-dark font-bold leading-tight">Kondisi Baik (On Track)</div>
+</div>
+</div>
+<div class="bg-surface-cream px-space-md py-space-sm rounded-lg flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="font-title-md text-title-md font-bold">94</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-moss-muted uppercase tracking-wider">Skor Kinerja Tapak</div>
+<div class="font-body-sm text-body-sm text-charcoal-ink font-semibold">94/100 (Optimal)</div>
+</div>
+</div>
+<div class="bg-surface-cream px-space-md py-space-sm rounded-lg flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-forest-dark flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">shield</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-moss-muted uppercase tracking-wider">Safeguard Audit</div>
+<div class="font-title-md text-title-md text-primary-container font-bold leading-tight">100% Kepatuhan</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 Top KPI Cards Bento -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-pure rounded-xl p-space-md shadow-sm relative group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Kemajuan Proyek</span>
+<span class="p-1.5 rounded-md bg-surface-container text-primary">
+<span class="material-symbols-outlined text-base">trending_up</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-forest-dark">88%</span>
+<span class="font-label-md text-label-md font-semibold text-primary-container">Kumulatif</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 88%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-moss-muted mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+<span class="font-semibold text-forest-dark">+3%</span> Ahead of Target Rencana (85%)
+      </p>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-pure rounded-xl p-space-md shadow-sm relative group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Aktivitas Selesai</span>
+<span class="p-1.5 rounded-md bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-base">task_alt</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-charcoal-ink">24</span>
+<span class="font-title-md text-title-md text-moss-muted">/ 28 Aktivitas</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 85.7%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-moss-muted mt-2">
+        Sisa 4 aktivitas tahap verifikasi lapangan di Q4
+      </p>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-pure rounded-xl p-space-md shadow-sm relative group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Output &amp; Deliverables</span>
+<span class="p-1.5 rounded-md bg-secondary-container text-forest-dark">
+<span class="material-symbols-outlined text-base">inventory_2</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md font-bold text-forest-dark">92%</span>
+<span class="font-body-sm text-body-sm text-moss-muted font-medium">(12 / 13 Terpenuhi)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 92%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-moss-muted mt-2">
+        1 Draf Naskah Akademik Perda Adat finalisasi
+      </p>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-pure rounded-xl p-space-md shadow-sm relative group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Realisasi Anggaran</span>
+<span class="p-1.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-base">payments</span>
+</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-tertiary">Rp 46.120.000</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full mt-3 overflow-hidden">
+<div class="bg-earth-ochre h-full rounded-full transition-all duration-500" style="width: 25%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-moss-muted mt-2 truncate">
+        25% dari pagu Rp 184.200.000 • WTP Buku Kas
+      </p>
+</div>
+</section>
+<!-- Main Asymmetric Grid: 8 Columns Analytics / 4 Columns Geoportal & Feed -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN (8 Cols): Matrix Target vs Realisasi & S-Curve -->
+<div class="lg:col-span-7 xl:col-span-8 space-y-space-lg">
+<!-- S-Curve Chart Panel -->
+<section class="bg-surface-pure rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md border-b-0 gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-forest-dark">Kurva S Kinerja Pelaksanaan</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-low text-primary-container font-label-sm text-label-sm font-semibold">+3.0% Deviasi Positif</span>
+</div>
+<p class="font-body-sm text-body-sm text-moss-muted">
+              Komparasi Target Kumulatif Rencana Kerja (Baseline) terhadap Realisasi Faktur Tapak (Q1 2023 - Q4 2025)
+            </p>
+</div>
+<div class="flex items-center gap-space-md self-start sm:self-center">
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-1 bg-outline-variant rounded-full inline-block"></span>
+<span class="font-label-sm text-label-sm text-moss-muted">Rencana Kumulatif</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3.5 h-1.5 bg-primary rounded-full inline-block"></span>
+<span class="font-label-sm text-label-sm font-semibold text-forest-dark">Realisasi Faktual</span>
+</div>
+</div>
+</div>
+<!-- SVG S-Curve Graphic Chart -->
+<div class="relative w-full h-72 pt-space-md">
+<svg class="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 760 240">
+<defs>
+<linearGradient id="actualGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#003626" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#003626" stop-opacity="0.0"></stop>
+</linearGradient>
+</defs>
+<!-- Horizontal Gridlines -->
+<line stroke="#d9e6dc" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="740" y1="20" y2="20"></line>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="end" x="30" y="24">100%</text>
+<line stroke="#d9e6dc" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="740" y1="70" y2="70"></line>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="end" x="30" y="74">75%</text>
+<line stroke="#d9e6dc" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="740" y1="120" y2="120"></line>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="end" x="30" y="124">50%</text>
+<line stroke="#d9e6dc" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="740" y1="170" y2="170"></line>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="end" x="30" y="174">25%</text>
+<line stroke="#c0c9c2" stroke-width="1" x1="40" x2="740" y1="210" y2="210"></line>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="end" x="30" y="214">0%</text>
+<!-- Planned Curve (Baseline dashed) -->
+<path d="M 50 205 C 160 195, 240 160, 360 115 C 480 75, 590 38, 730 25" fill="none" stroke="#707974" stroke-dasharray="6 4" stroke-width="2.5"></path>
+<!-- Actual Curve Area Fill -->
+<path d="M 50 205 C 160 190, 240 150, 360 100 C 460 60, 520 48, 560 44 L 560 210 L 50 210 Z" fill="url(#actualGradient)"></path>
+<!-- Actual Curve Line (Thick Forest Green) -->
+<path d="M 50 205 C 160 190, 240 150, 360 100 C 460 60, 520 48, 560 44" fill="none" stroke="#003626" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Key Milestones Points -->
+<!-- Q1 2023 -->
+<circle cx="50" cy="205" fill="#003626" r="4"></circle>
+<!-- Q3 2023 -->
+<circle cx="210" cy="165" fill="#003626" r="4"></circle>
+<!-- Q1 2024 -->
+<circle cx="360" cy="100" fill="#003626" r="4"></circle>
+<!-- Q3 2024 (Now: 88%) -->
+<circle cx="560" cy="44" fill="#003626" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<!-- Tooltip Anchor -->
+<g transform="translate(515, 6)">
+<rect fill="#0F3226" height="26" rx="4" width="90"></rect>
+<text fill="#ffffff" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="45" y="17">88% (Aktual)</text>
+</g>
+<!-- Baseline Target marker at present -->
+<circle cx="560" cy="52" fill="#707974" r="4"></circle>
+<!-- Time Axis Labels -->
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="middle" x="50" y="228">Q1 2023</text>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="middle" x="190" y="228">Q3 2023</text>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="middle" x="330" y="228">Q1 2024</text>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="middle" x="470" y="228">Q3 2024</text>
+<text fill="#003626" font-family="Inter" font-size="10" font-weight="700" text-anchor="middle" x="560" y="228">Saat Ini (Okt)</text>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="middle" x="650" y="228">Q1 2025</text>
+<text fill="#6E8771" font-family="Inter" font-size="10" text-anchor="middle" x="730" y="228">Q4 2025</text>
+</svg>
+</div>
+<div class="mt-space-md p-space-sm bg-surface-cream rounded-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-charcoal-ink font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-base">info</span>
+<span>Target Rencana Kuartal III tercapai lebih cepat berkat percepatan pemetaan batas petuanan adat di Saunulu.</span>
+</div>
+<span class="font-label-sm text-label-sm text-moss-muted whitespace-nowrap">Audit Log: 14 Okt 2024</span>
+</div>
+</section>
+<!-- Planned vs Actual Target Matrix -->
+<section class="bg-surface-pure rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-forest-dark font-bold">
+              Target Hibah vs Realisasi Faktual
+            </h2>
+<p class="font-body-sm text-body-sm text-moss-muted">
+              Rincian capaian logframe berdasarkan matriks verifikasi donor &amp; tapak
+            </p>
+</div>
+<button class="px-3 py-1.5 rounded bg-surface-container text-primary-container font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-base">filter_list</span>
+            Semua Output (4)
+          </button>
+</div>
+<div class="space-y-space-md">
+<!-- Output 1.1 -->
+<div class="p-space-md bg-surface-cream rounded-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-forest-dark text-surface-pure font-label-sm text-label-sm font-bold">Output 1.1</span>
+<span class="font-title-md text-title-md font-bold text-charcoal-ink">Luas Area Hutan Adat Terpetakan Partisipatif</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded bg-surface-container-low text-forest-dark font-label-sm text-label-sm font-bold">108% Tercapai</span>
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm text-body-sm font-body-sm py-1.5">
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Target Dokumen Hibah</span>
+<span class="font-semibold text-charcoal-ink">1.800 Hektar</span>
+</div>
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Realisasi Lapangan</span>
+<span class="font-bold text-primary">1.950 Hektar (Polygon Valid)</span>
+</div>
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Status Verifikasi</span>
+<span class="text-on-surface-variant font-medium">BAP Saniri Negeri Saunulu</span>
+</div>
+</div>
+<div class="w-full bg-sand-border/40 h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-forest-dark h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<!-- Output 1.2 -->
+<div class="p-space-md bg-surface-cream rounded-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-forest-dark text-surface-pure font-label-sm text-label-sm font-bold">Output 1.2</span>
+<span class="font-title-md text-title-md font-bold text-charcoal-ink">Kader Pemetaan Geospasial (GTID) Bersertifikat</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-primary-container font-label-sm text-label-sm font-bold">100% Selesai</span>
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm text-body-sm font-body-sm py-1.5">
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Target Kader</span>
+<span class="font-semibold text-charcoal-ink">15 Orang Terlatih</span>
+</div>
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Realisasi Faktual</span>
+<span class="font-bold text-charcoal-ink">15 Orang (7 Perempuan, 8 Pemuda)</span>
+</div>
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Akreditasi</span>
+<span class="text-on-surface-variant font-medium">Sertifikasi GPS &amp; QGIS Tapak Telapak</span>
+</div>
+</div>
+<div class="w-full bg-sand-border/40 h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 100%"></div>
+</div>
+</div>
+<!-- Output 2.1 -->
+<div class="p-space-md bg-surface-cream rounded-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">Output 2.1</span>
+<span class="font-title-md text-title-md font-bold text-charcoal-ink">Titik Waypoint Perambahan &amp; Pembalakan Terverifikasi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded bg-secondary-container text-forest-dark font-label-sm text-label-sm font-bold">90% Progres</span>
+<span class="material-symbols-outlined text-secondary text-lg">pending</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm text-body-sm font-body-sm py-1.5">
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Target Observasi</span>
+<span class="font-semibold text-charcoal-ink">20 Titik Anomali Satelit</span>
+</div>
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Realisasi Ground Check</span>
+<span class="font-bold text-forest-dark">18 Titik Selesai Disurvei</span>
+</div>
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Sisa Patroli</span>
+<span class="text-earth-ochre font-semibold">2 Titik Sektor Utara Seram</span>
+</div>
+</div>
+<div class="w-full bg-sand-border/40 h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-earth-ochre h-full rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<!-- Output 3.1 -->
+<div class="p-space-md bg-surface-cream rounded-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-2">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-earth-ochre text-surface-pure font-label-sm text-label-sm font-bold">Output 3.1</span>
+<span class="font-title-md text-title-md font-bold text-charcoal-ink">Dokumen Naskah Akademik Perda Perlindungan Wilayah Adat</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">60% On Track</span>
+<span class="material-symbols-outlined text-moss-muted text-lg">sync</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm text-body-sm font-body-sm py-1.5">
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Target Kebijakan</span>
+<span class="font-semibold text-charcoal-ink">1 Naskah Diserahkan ke Bapemperda</span>
+</div>
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Status Saat Ini</span>
+<span class="font-bold text-charcoal-ink">Draf 02 Pembahasan Ahli Hukum Unpatti</span>
+</div>
+<div>
+<span class="text-moss-muted text-label-sm font-label-sm block">Batas Waktu</span>
+<span class="text-on-surface-variant font-medium">November 2024</span>
+</div>
+</div>
+<div class="w-full bg-sand-border/40 h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-forest-dark h-full rounded-full" style="width: 60%"></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN (4 Cols): Mini Geoportal, Safeguard & Activity Log -->
+<div class="lg:col-span-5 xl:col-span-4 space-y-space-lg">
+<!-- Mini Geoportal Tapak & Patroli -->
+<section class="bg-surface-pure rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">map</span>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink">Geoportal Tapak &amp; Patroli</h3>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 rounded text-primary-container font-mono">EPSG:4326</span>
+</div>
+<!-- Simulated Map Box with Location Tag -->
+<div class="bg-cover bg-center w-full h-52 rounded-lg relative overflow-hidden flex flex-col justify-between p-3" data-alt="Satellite terrain map of Seram Island Maluku showing dense tropical rainforest petuanan adat boundary with polygon vector overlay in deep green and orange GPS patrol waypoint dots overlooking the Banda Sea in natural sunlight" data-location="Seram Selatan, Maluku, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuChFbZovVMgiPU43S_0nqIAcAp1hMKhyy-QvXez1Qv-gTQT6WXwKlRntYMCNH1ei7HLccekW4xttsPBBcntbw5rjYOYLi9J2dKMsLGDNjKsppw_zQBLjF6fLGE93-AB4pazP1vh28QNZQENBiPD-8V_i8xgk7YDc6LUrjS5Ux9NN7NjhSC4GNsrrBj62zmU1tBr4YwDyct0S4qR5RymEp8tOfBHXHHjd97Pz6DnSQD0tENPWarMronU')">
+<div class="flex justify-between items-start">
+<span class="bg-forest-dark/85 text-surface-pure text-label-sm font-label-sm px-2 py-1 rounded backdrop-blur-sm">
+              Seram Selatan • Saunulu
+            </span>
+<span class="bg-earth-ochre text-surface-pure text-label-sm font-label-sm px-2 py-1 rounded shadow-sm font-bold">
+              18 Waypoint Aktif
+            </span>
+</div>
+<!-- Vector Marker Floating Pill -->
+<div class="bg-surface-pure/95 backdrop-blur-md p-2.5 rounded-md shadow-md text-charcoal-ink flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm font-bold text-forest-dark">Poligon Petuanan Adat</span>
+<span class="text-label-sm font-label-sm text-moss-muted">1.950 Ha terverifikasi drone &amp; ground</span>
+</div>
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-sm">
+<button class="w-full py-2 px-3 bg-surface-cream hover:bg-surface-container rounded font-label-sm text-label-sm font-semibold text-forest-dark transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">open_in_full</span>
+            Peta Penuh
+          </button>
+<button class="w-full py-2 px-3 bg-surface-cream hover:bg-surface-container rounded font-label-sm text-label-sm font-semibold text-primary transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">download</span>
+            GeoJSON Tapak
+          </button>
+</div>
+</section>
+<!-- Safeguard Sosial & Lingkungan (Compliance Guard) -->
+<section class="bg-surface-pure rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-xl">gavel</span>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink">Kepatuhan Safeguard</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary-container font-label-sm text-label-sm font-bold">Audit Hijau</span>
+</div>
+<div class="space-y-space-xs">
+<!-- Item 1: FPIC -->
+<div class="p-2.5 rounded-lg bg-surface-cream flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">verified_user</span>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-charcoal-ink">FPIC &amp; Persetujuan Bebas Didahulukan</span>
+<span class="text-label-sm font-label-sm text-primary font-bold">SAH</span>
+</div>
+<p class="font-label-sm text-label-sm text-moss-muted">
+                Keputusan Saniri Lengkap No. 04/SK-SN/2023 tanpa nota keberatan dari klan adat.
+              </p>
+</div>
+</div>
+<!-- Item 2: Kesetaraan Gender & Pemuda -->
+<div class="p-2.5 rounded-lg bg-surface-cream flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">groups</span>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-charcoal-ink">Partisipasi Inklusif Tapak</span>
+<span class="text-label-sm font-label-sm text-forest-dark font-bold">46.6%</span>
+</div>
+<p class="font-label-sm text-label-sm text-moss-muted">
+                Keterlibatan perempuan &amp; pemuda melampaui standar minimal donor (ambang batas 40%).
+              </p>
+</div>
+</div>
+<!-- Item 3: Safety & HSE -->
+<div class="p-2.5 rounded-lg bg-surface-cream flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">health_and_safety</span>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-charcoal-ink">Nol Insiden Keselamatan Patroli</span>
+<span class="text-label-sm font-label-sm text-primary font-bold">0 Kasus</span>
+</div>
+<p class="font-label-sm text-label-sm text-moss-muted">
+                Prosedur lapangan &amp; logistik penjelajahan hutan Seram berjalan dengan protokol HSE ketat.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Real-time Activity Log & Audit Trail -->
+<section class="bg-surface-pure rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-moss-muted text-xl">history</span>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink">Log Aktivitas &amp; Audit Trail</h3>
+</div>
+<span class="font-label-sm text-label-sm text-moss-muted">Sinkron Otomatis</span>
+</div>
+<div class="relative pl-5 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<!-- Log 1 -->
+<div class="relative">
+<div class="absolute -left-5 top-1 w-2.5 h-2.5 rounded-full bg-forest-dark"></div>
+<div class="font-body-sm text-body-sm font-medium text-charcoal-ink leading-snug">
+              Waypoint #18 Perambahan Hulu Wae Kawa diunggah oleh Tim Lapangan
+            </div>
+<div class="font-label-sm text-label-sm text-moss-muted flex items-center gap-1.5 mt-0.5">
+<span>Hari ini, 11:24 WIT</span> • <span>Koordinator Lapangan</span>
+</div>
+</div>
+<!-- Log 2 -->
+<div class="relative">
+<div class="absolute -left-5 top-1 w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+<div class="font-body-sm text-body-sm font-medium text-charcoal-ink leading-snug">
+              Persetujuan Pencairan Tranche 2 diajukan ke Bagian Keuangan (Fase 5)
+            </div>
+<div class="font-label-sm text-label-sm text-moss-muted flex items-center gap-1.5 mt-0.5">
+<span>Kemarin, 16:40 WIT</span> • <span>Manajer Proyek</span>
+</div>
+</div>
+<!-- Log 3 -->
+<div class="relative">
+<div class="absolute -left-5 top-1 w-2.5 h-2.5 rounded-full bg-earth-ochre"></div>
+<div class="font-body-sm text-body-sm font-medium text-charcoal-ink leading-snug">
+              Konsultasi publik draf peraturan negeri bersama 3 marga adat selesai
+            </div>
+<div class="font-label-sm text-label-sm text-moss-muted flex items-center gap-1.5 mt-0.5">
+<span>12 Okt 2024</span> • <span>Fasilitator Masyarakat</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Bottom Section: Critical Tasks & Quick Action Bar -->
+<section class="bg-surface-pure rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-earth-ochre"></span>
+<h2 class="font-headline-sm text-headline-sm text-forest-dark font-bold">
+            Tugas Kritis &amp; Pengajuan Tertunda
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-moss-muted">
+          Aksi segera yang memerlukan persetujuan lapangan, penandatanganan berita acara, atau dokumen pendukung.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-4 py-2 bg-surface-container text-forest-dark hover:bg-surface-container-high rounded font-label-md text-label-md font-semibold transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-base">description</span>
+          Buat Laporan Monitoring (PDF)
+        </button>
+<button class="px-4 py-2 bg-surface-container text-primary-container hover:bg-surface-container-high rounded font-label-md text-label-md font-semibold transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-base">sync</span>
+          Perbarui Data Lapangan
+        </button>
+<button class="px-4 py-2 bg-forest-dark hover:bg-charcoal-ink text-surface-pure rounded font-label-md text-label-md font-semibold shadow-sm transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-base">edit_calendar</span>
+          Ajukan Revisi Workplan
+        </button>
+</div>
+</div>
+<!-- Critical Items List -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Critical Card 1 -->
+<div class="p-space-md rounded-lg bg-surface-cream flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">Prioritas Tinggi</span>
+<span class="text-label-sm font-label-sm text-moss-muted">Batas: 20 Okt 2024</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink leading-snug">
+            Unggah Berita Acara Batas Petuanan Adat
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Scan dokumen fisik tanda tangan 5 Kepala Soa Negeri Saunulu dan matriks peta konsensus tapak.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-moss-muted font-medium">PIC: Annas R. Syarif</span>
+<button class="text-primary font-label-sm text-label-sm font-bold hover:underline flex items-center gap-1">
+            Unggah Berkas <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Critical Card 2 -->
+<div class="p-space-md rounded-lg bg-surface-cream flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Investigasi SVLK</span>
+<span class="text-label-sm font-label-sm text-moss-muted">Batas: 24 Okt 2024</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink leading-snug">
+            Pengiriman Sampel Kayu Merbau ke Lab Uji
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Verifikasi rantai pasok kayu log curian hasil temuan patroli di KM 32 untuk bukti laporan advokasi independen.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-moss-muted font-medium">PIC: Tim Investigasi</span>
+<button class="text-primary font-label-sm text-label-sm font-bold hover:underline flex items-center gap-1">
+            Lihat Bukti Lapangan <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Critical Card 3 -->
+<div class="p-space-md rounded-lg bg-surface-cream flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container text-forest-dark font-label-sm text-label-sm font-bold">Pelaporan Donor</span>
+<span class="text-label-sm font-label-sm text-moss-muted">Batas: 31 Okt 2024</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink leading-snug">
+            Penyusunan Laporan Evaluasi Kuartal III
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Konsolidasi capaian indikator dampak gender, kurva S keuangan, dan rekapitulasi audit ke sekretariat hibah.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-moss-muted font-medium">PIC: M&amp;E Officer</span>
+<button class="text-primary font-label-sm text-label-sm font-bold hover:underline flex items-center gap-1">
+            Buka Draf Laporan <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Interactive micro-behavior for dashboard actions
+  document.addEventListener('DOMContentLoaded', () => {
+    // Quick action notification toast
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const text = btn.innerText.trim();
+        if (text.includes('Peta Penuh')) {
+          console.log('[GIS] Membuka Geoportal Layer Lengkap EPSG:4326...');
+        } else if (text.includes('GeoJSON')) {
+          console.log('[GIS] Mengunduh GeoJSON Batas Petuanan Adat Saunulu...');
+        } else if (text.includes('Revisi Workplan')) {
+          console.log('[MONEV] Mengarahkan ke Modul Pengajuan Revisi Workplan...');
+        }
+      });
+    });
+  });
+</script></main><footer class="cms-footer">Kaoem Telapak · CMS demo lokal</footer></body></html>

@@ -1,0 +1,584 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Kaoem Telapak — Perkumpulan Gerakan Kerakyatan Menuju Kedaulatan Sumber Daya Alam</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#394b38","surface-dim":"#d0ddd4","inverse-surface":"#28332d","error-container":"#ffdad6","on-secondary-fixed":"#0e1f10","surface":"#f0fdf3","tertiary-fixed-dim":"#f7ba84","on-secondary-container":"#546853","inverse-primary":"#9cd2ba","error":"#ba1a1a","on-tertiary-container":"#e1a672","outline-variant":"#c0c9c2","primary":"#003626","on-primary":"#ffffff","outline":"#707974","surface-variant":"#d9e6dc","moss-muted":"#6E8771","secondary-fixed-dim":"#b7ccb4","forest-dark":"#0F3226","surface-cream":"#F8F7F2","primary-container":"#184d3b","primary-fixed":"#b8eed5","surface-container":"#e4f1e7","surface-container-highest":"#d9e6dc","on-tertiary-fixed-variant":"#673d12","tertiary-container":"#643b10","on-primary-fixed-variant":"#1b4f3d","earth-ochre":"#C28B59","charcoal-ink":"#202B25","inverse-on-surface":"#e7f4ea","on-error":"#ffffff","surface-container-high":"#dfebe2","secondary":"#50634f","on-background":"#131e18","surface-container-low":"#eaf7ed","surface-pure":"#FFFFFF","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","surface-tint":"#356854","tertiary":"#492600","on-surface-variant":"#404944","secondary-container":"#d0e6cc","secondary-fixed":"#d3e8cf","surface-bright":"#f0fdf3","sand-border":"#E3E0D5","on-tertiary-fixed":"#2d1600","on-primary-fixed":"#002116","primary-fixed-dim":"#9cd2ba","on-primary-container":"#88bda6","background":"#f0fdf3","on-secondary":"#ffffff","tertiary-fixed":"#ffdcc0","on-error-container":"#93000a","on-surface":"#131e18"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{gutter:"1.5rem","space-xl":"3rem","gutter-desktop":"2.5rem","space-xs":"0.25rem",margin:"1.25rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.75rem","margin-tablet":"2.5rem","margin-desktop":"4.5rem"},fontFamily:{"label-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"26px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"display-mobile":["38px",{lineHeight:"46px",letterSpacing:"-0.02em",fontWeight:"800"}],"display":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"title-md":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-sm":["22px",{lineHeight:"30px",letterSpacing:"0em",fontWeight:"600"}]}}}};</script><link rel="stylesheet" href="./assets/leaflet/leaflet.css" crossorigin=""><script defer="" src="./assets/leaflet/leaflet.js" crossorigin=""></script><link rel="stylesheet" href="./assets/site.css"><script defer src="./assets/map-data.js"></script><script defer="" src="./assets/site.js"></script></head><body class="bg-surface-cream font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-cream/95 backdrop-blur-md shadow-[0_1px_8px_rgba(32,43,37,0.04)]"><div class="bg-surface-container-high"><div class="max-w-7xl mx-auto px-gutter lg:px-gutter-desktop h-10 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-6"><span>Bogor, Jawa Barat (WIB)</span><span class="hidden sm:inline">•</span><a class="hover:text-primary transition-colors" href="mailto:kaoem@kaoemtelapak.org">kaoem@kaoemtelapak.org</a><span class="hidden md:inline">•</span><a class="hidden md:inline hover:text-primary transition-colors" href="tel:+622518324578">+62 (0251) 8324578</a></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 font-label-sm"><a class="text-primary font-bold" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">ID</a><span class="text-outline-variant">|</span><a class="text-on-surface-variant hover:text-primary transition-colors" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">EN</a></div><a class="hidden lg:inline-block px-3 py-1 bg-surface-container text-on-secondary-container hover:bg-surface-container-highest hover:text-on-surface rounded transition-colors" data-path="bergabung" href="./pendaftaran_anggota_kaoem_telapak.html">Relawan &amp; Jaringan</a></div></div></div><div class="max-w-7xl mx-auto px-gutter lg:px-gutter-desktop h-20 flex items-center justify-between gap-6"><div class="flex items-center gap-4"><a class="flex items-center gap-3 group" data-path="beranda" href="./index.html"><img src="./assets/kaoem-telapak-logo.png" alt="Kaoem Telapak" class="kt-logo"></a></div><nav class="hidden xl:flex items-center gap-1 font-label-md text-label-md" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="beranda" href="./index.html">Beranda</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="tentang-kami" href="./tentang_kami_kaoem_telapak.html">Tentang Kami</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="struktur-organisasi" href="./struktur_organisasi_kaoem_telapak.html">Tata Kelola</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="program-kami" href="./program_kami_kaoem_telapak.html">Program</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html">Dampak &amp; Peta</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="publikasi-dan-cerita" href="./publikasi-dan-cerita.html">Publikasi</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="kontak-dan-kolaborasi" href="./kontak-dan-kolaborasi.html">Kontak</a></nav><div class="flex items-center gap-3"><a class="px-5 py-2.5 bg-earth-ochre text-on-primary hover:bg-tertiary-container font-label-md text-label-md rounded shadow-sm hover:translate-y-[-1px] transition-all flex items-center gap-2" data-path="dukung-kami" href="./dukung-kami.html"><span>Dukung Kami</span><span class="material-symbols-outlined text-base">volunteer_activism</span></a><a class="kt-login-link" href="./masuk_pemulihan_akun_kaoem_telapak.html">Masuk</a><button class="xl:hidden p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded" type="button"><span class="material-symbols-outlined">menu</span></button></div></div><div class="border-t border-sand-border bg-surface-container-low/95"><div class="max-w-7xl mx-auto px-gutter lg:px-gutter-desktop h-11 flex items-center justify-between gap-4 font-label-sm text-label-sm"><div class="flex items-center gap-2 overflow-x-auto py-1 scrollbar-none"><span class="text-primary font-bold flex items-center gap-1 shrink-0 pr-2 border-r border-sand-border"><span class="material-symbols-outlined text-sm">map</span>Sistem Informasi Geospasial</span><nav class="flex items-center gap-1.5 shrink-0" data-active-classes="bg-primary text-on-primary font-bold shadow-xs"><a class="px-2.5 py-1 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html">Atlas Dampak Nusantara</a><a aria-current="page" class="px-2.5 py-1 rounded transition-colors bg-primary text-on-primary font-bold shadow-xs" data-path="peta-sebaran-anggota" href="./peta_sebaran_anggota.html">Peta Sebaran Anggota</a><a class="px-2.5 py-1 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded transition-colors" data-path="peta-cakupan-proyek" href="./peta_cakupan_proyek.html">Peta Cakupan Proyek</a><a class="px-2.5 py-1 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded transition-colors" data-path="analitik-dampak-spasial" href="./analitik_dampak_spasial.html">Analitik Dampak Spasial</a></nav></div><div class="hidden sm:flex items-center gap-2 text-moss-muted shrink-0"><span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span><span>Basis Data Spasial Aktif v2.4</span></div></div></div></header><main class="w-full pt-[10.25rem] bg-surface-cream min-h-screen"><div class="flex flex-col w-full">
+<!-- Privacy Shield Compliance Notice Banner -->
+<section class="w-full bg-surface-container-high py-2.5 px-gutter lg:px-gutter-desktop">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="text-on-surface font-semibold">Protokol Privasi &amp; Safeguard Keanggotaan:</span>
+<span class="text-on-surface-variant">Titik lokasi ditampilkan pada tingkat kabupaten/kota secara agregat dan aproksimasi tanpa mengekspos alamat tinggal pribadi atau koordinat presisi demi integritas keamanan pegiat lapangan.</span>
+</div>
+<div class="flex items-center gap-2 shrink-0 bg-surface-pure px-2.5 py-1 rounded shadow-sm text-forest-dark font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+<span>Anonymized GIS Policy v2.4 (GDPR &amp; Safeguard Compliant)</span>
+</div>
+</div>
+</section>
+<!-- Sub-navigation & Header Section -->
+<section class="w-full bg-surface-pure pt-6 pb-8 px-gutter lg:px-gutter-desktop">
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<!-- Breadcrumb & GIS Tabs Switcher -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<nav class="flex items-center gap-2 font-label-sm text-label-sm text-moss-muted">
+<a class="hover:text-primary transition-colors" href="./index.html">Beranda</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<a class="hover:text-primary transition-colors" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">Dampak &amp; Peta</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-primary font-bold">Peta Sebaran Anggota</span>
+</nav>
+<!-- GIS 4-Page Navigation Pill Switcher -->
+<div class="inline-flex items-center p-1 bg-surface-container-low rounded-lg shadow-sm">
+<a class="px-3 py-1.5 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="./atlas_dampak_nusantara.html">
+<span class="material-symbols-outlined text-sm">public</span>
+<span>Atlas Dampak Nusantara</span>
+</a>
+<a class="px-3 py-1.5 rounded font-label-sm text-label-sm bg-primary text-on-primary font-bold shadow-sm flex items-center gap-1.5" href="./peta_sebaran_anggota.html">
+<span class="material-symbols-outlined text-sm">group</span>
+<span>Peta Sebaran Anggota</span>
+</a>
+<a class="px-3 py-1.5 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="./peta_cakupan_proyek.html">
+<span class="material-symbols-outlined text-sm">nature_people</span>
+<span>Peta Cakupan Proyek</span>
+</a>
+<a class="px-3 py-1.5 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1.5" href="./analitik_dampak_spasial.html">
+<span class="material-symbols-outlined text-sm">analytics</span>
+<span>Analitik Dampak Spasial</span>
+</a>
+</div>
+</div>
+<!-- Main Headline Block -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pt-2">
+<div class="max-w-3xl space-y-2">
+<div class="inline-flex items-center gap-2 font-label-sm text-label-sm text-earth-ochre uppercase font-bold tracking-wider">
+<span class="material-symbols-outlined text-sm">hub</span>
+<span>Jaringan Aksi Spasial Nusantara</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-forest-dark tracking-tight">
+            Peta Sebaran Anggota &amp; Jaringan Pemantau Akar Rumput
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Menghubungkan 850+ kader masyarakat adat, pemantau GTID, paralegal, petani, nelayan tradisional, dan peneliti muda di 24 provinsi nusantara demi tata kelola sumber daya alam yang berkedaulatan.
+          </p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="px-4 py-2 bg-surface-container-high hover:bg-surface-variant text-forest-dark font-label-md text-label-md rounded flex items-center gap-2 transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>Ekspor Metrik Spasial</span>
+</button>
+<a class="px-4 py-2 bg-earth-ochre hover:bg-tertiary-container text-on-primary font-label-md text-label-md rounded flex items-center gap-2 shadow-sm transition-all" href="#direktori-kader">
+<span class="material-symbols-outlined text-base">person_search</span>
+<span>Jelajahi Direktori</span>
+</a>
+</div>
+</div>
+<!-- 4 Key Aggregate Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+<div class="bg-surface-cream p-5 rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-moss-muted uppercase">Total Anggota Perorangan</span>
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">badge</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-forest-dark font-bold leading-none">850<span class="text-earth-ochre">+</span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Tersebar dari Sabang sampai Merauke di 24 provinsi</p>
+</div>
+</div>
+<div class="bg-surface-cream p-5 rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-moss-muted uppercase">Paralegal &amp; Investigator</span>
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">gavel</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-forest-dark font-bold leading-none">184</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Sertifikasi GTID &amp; Pemantau Independen Kehutanan</p>
+</div>
+</div>
+<div class="bg-surface-cream p-5 rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-moss-muted uppercase">Pemantau KAoem MUda</span>
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">diversity_3</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-forest-dark font-bold leading-none">350<span class="text-earth-ochre">+</span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Kader generasi penerus perlindungan hutan ulayat</p>
+</div>
+</div>
+<div class="bg-surface-cream p-5 rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-moss-muted uppercase">Hub &amp; Komunitas Adat</span>
+<div class="w-8 h-8 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">location_city</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-headline-lg text-headline-lg text-forest-dark font-bold leading-none">142</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Titik simpul tapak masyarakat hukum adat dampingan</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Two-Column Spatial Workspace (Map + Directory) -->
+<section class="w-full py-8 px-gutter lg:px-gutter-desktop">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT MAP AREA (65% -> col-span-8 approx) -->
+<div class="lg:col-span-8 flex flex-col gap-4">
+<!-- Map Controls & Dynamic Filters -->
+<div class="bg-surface-pure p-4 rounded-lg shadow-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
+<span class="font-label-sm text-label-sm text-moss-muted uppercase shrink-0 mr-1">Filter Peran:</span>
+<button class="px-3 py-1 bg-primary text-on-primary font-label-sm text-label-sm rounded font-medium shadow-xs">Semua (850)</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm rounded transition-colors whitespace-nowrap">Kader GTID</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm rounded transition-colors whitespace-nowrap">Paralegal Adat</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm rounded transition-colors whitespace-nowrap">Pengurus Daerah</button>
+<button class="px-3 py-1 bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm rounded transition-colors whitespace-nowrap">KAoem MUda</button>
+</div>
+<div class="flex items-center gap-1 bg-surface-cream p-1 rounded shrink-0 self-end sm:self-auto">
+<button class="px-2.5 py-1 bg-surface-pure text-forest-dark font-label-sm text-label-sm rounded shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">pin_drop</span>
+<span>Kluster Pin</span>
+</button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-forest-dark font-label-sm text-label-sm rounded transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">grid_view</span>
+<span>Choropleth</span>
+</button>
+<button class="px-2.5 py-1 text-on-surface-variant hover:text-forest-dark font-label-sm text-label-sm rounded transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">local_fire_department</span>
+<span>Heatmap</span>
+</button>
+</div>
+</div>
+<!-- Geospatial Canvas Card -->
+<div class="relative bg-surface-pure rounded-lg shadow-sm overflow-hidden flex flex-col">
+<!-- Live Telemetry Status Bar -->
+<div class="px-4 py-2.5 bg-forest-dark text-on-primary flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+</span>
+<span>LAYER AKTIF: ARCHIPELAGO MEMBER CLUSTER (24 PROVINSI)</span>
+<span class="hidden md:inline text-moss-muted">|</span>
+<span class="hidden md:inline text-surface-container-high">PROJEKSI: WGS 84 / EPSG:4326 (AGREGAT KABUPATEN)</span>
+</div>
+<div class="flex items-center gap-2 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="hidden sm:inline">Lokasi Disamarkan 15km Radius</span>
+</div>
+</div>
+<!-- Interactive Map Container SVG + High-res Archipelago Visualization -->
+<div class="kt-map" id="kt-map" aria-label="Peta interaktif Indonesia"><p class="map-loading">Memuat peta. Periksa koneksi internet jika peta tidak tampil.</p></div><p class="kt-map-note">Peta dasar: OpenStreetMap. Penanda adalah contoh lokasi wilayah, bukan koordinat anggota atau batas proyek terverifikasi.</p>
+<!-- Choropleth Legend Bottom Bar -->
+<div class="p-4 bg-surface-pure flex flex-col md:flex-row items-start md:items-center justify-between gap-4 font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="font-semibold text-forest-dark">Kerapatan Anggota:</span>
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-3 rounded bg-surface-variant inline-block"></span>
+<span class="text-on-surface-variant">Rendah (1-10)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-3 rounded bg-secondary-container inline-block"></span>
+<span class="text-on-surface-variant">Sedang (11-30)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-3 rounded bg-primary-container inline-block"></span>
+<span class="text-on-surface-variant">Tinggi (31-60)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-3 rounded bg-earth-ochre inline-block"></span>
+<span class="text-on-surface-variant font-bold">Sangat Intensif (&gt;60)</span>
+</div>
+</div>
+<div class="text-moss-muted text-[11px]">
+              Terakhir diperbarui: 24 Oktober 2024 • Simpul Terverifikasi Lapangan
+            </div>
+</div>
+</div>
+</div>
+<!-- RIGHT MEMBER DIRECTORY & SELECTED REGIONAL HUB PANEL (35% -> col-span-4 approx) -->
+<div class="lg:col-span-4 flex flex-col gap-4" id="direktori-kader">
+<!-- Search & Filter Header -->
+<div class="bg-surface-pure p-4 rounded-lg shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-forest-dark flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">contacts</span>
+<span>Direktori Pegiat Lapangan</span>
+</h2>
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-2 py-0.5 rounded font-bold">5 Profil Terpilih</span>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-moss-muted text-lg">search</span>
+<input class="w-full pl-9 pr-4 py-2 bg-surface-cream text-on-surface font-body-sm text-body-sm rounded focus:outline-none focus:ring-1 focus:ring-primary shadow-xs" placeholder="Cari nama kader, keahlian, atau kabupaten..." type="text">
+</div>
+</div>
+<!-- Selected Regional Hub Card (Focus: Maluku & Seram) -->
+<div class="bg-surface-pure p-5 rounded-lg shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-earth-ochre/10 rounded-bl-full pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 bg-earth-ochre/20 text-earth-ochre font-label-sm text-label-sm font-bold rounded uppercase">Fokus Wilayah Aktif</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Kode Simpul: MSH-04</span>
+</div>
+<div class="mt-2.5">
+<h3 class="font-headline-sm text-headline-sm text-forest-dark">Hub Maluku &amp; Kepulauan Seram</h3>
+<p class="font-label-sm text-label-sm text-earth-ochre font-semibold mt-0.5">38 Anggota &amp; Pemantau Terdata</p>
+</div>
+<div class="mt-3.5 space-y-2 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">check_circle</span>
+<span><strong>Fokus Prioritas:</strong> Pengawasan Hutan Adat Saunulu, Patroli Drone GPS, Pemetaan Wilayah Kelola Sasi Laut Kepulauan Aru.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">verified</span>
+<span><strong>Koordinator Wilayah:</strong> Kader GTID Saunulu <em>(Consent Verified)</em></span>
+</div>
+</div>
+</div>
+<!-- Public Member Profiles List -->
+<div class="flex flex-col gap-3">
+<!-- Member 1: Annas Radin Syarif -->
+<article class="bg-surface-pure p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-forest-dark text-on-primary flex items-center justify-center font-title-md font-bold shrink-0">
+                  AR
+                </div>
+<div>
+<h4 class="font-title-md text-title-md text-forest-dark leading-tight">Annas Radin Syarif</h4>
+<p class="font-label-sm text-label-sm text-moss-muted">Kartografer &amp; Spesialis GIS Partisipatif</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-secondary-container text-primary font-label-sm text-label-sm rounded shrink-0 font-medium">Consent Verified</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-earth-ochre">location_on</span>
+<span>Aproksimasi: Bogor &amp; Seram</span>
+<span>•</span>
+<span class="text-primary font-medium">Koordinator GTID Lead</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Memimpin fasilitasi pemetaan wilayah adat di Maluku dan pendataan spasial batas ulayat bersama dewan saniri adat.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Pemetaan Spasial Tapak</span>
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Drone Mapping</span>
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">GTID Lead</span>
+</div>
+</article>
+<!-- Member 2: Marthen R. -->
+<article class="bg-surface-pure p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-title-md font-bold shrink-0">
+                  MR
+                </div>
+<div>
+<h4 class="font-title-md text-title-md text-forest-dark leading-tight">Marthen R.</h4>
+<p class="font-label-sm text-label-sm text-moss-muted">Pemantau Hutan Adat Saunulu</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-secondary-container text-primary font-label-sm text-label-sm rounded shrink-0 font-medium">Consent Verified</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-earth-ochre">location_on</span>
+<span>Aproksimasi: Maluku Tengah</span>
+<span>•</span>
+<span class="text-primary font-medium">Ranger Lapangan</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Aktif memverifikasi titik koordinat deforestasi kayu merbau dan patroli mandiri hutan tutupan Saunulu secara berkala.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Ground-truthed App</span>
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Verifikasi GPS Kayu Merbau</span>
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Hutan Adat</span>
+</div>
+</article>
+<!-- Member 3: Dina K. Sawang -->
+<article class="bg-surface-pure p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-earth-ochre text-on-primary flex items-center justify-center font-title-md font-bold shrink-0">
+                  DS
+                </div>
+<div>
+<h4 class="font-title-md text-title-md text-forest-dark leading-tight">Dina K. Sawang</h4>
+<p class="font-label-sm text-label-sm text-moss-muted">Advokasi Paralegal Perempuan Adat</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-secondary-container text-primary font-label-sm text-label-sm rounded shrink-0 font-medium">Consent Verified</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-earth-ochre">location_on</span>
+<span>Aproksimasi: Kutai Barat, Kaltim</span>
+<span>•</span>
+<span class="text-primary font-medium">Paralegal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Mendampingi kelompok perempuan adat Dayak dalam negosiasi hak ulayat dan penyelesaian tumpang tindih konsesi perkebunan.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Investigasi Hak Ulayat</span>
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Mitigasi Konflik Tenurial</span>
+</div>
+</article>
+<!-- Member 4: Wayan Eka P. -->
+<article class="bg-surface-pure p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-forest-dark flex items-center justify-center font-title-md font-bold shrink-0">
+                  WE
+                </div>
+<div>
+<h4 class="font-title-md text-title-md text-forest-dark leading-tight">Wayan Eka P.</h4>
+<p class="font-label-sm text-label-sm text-moss-muted">Koordinator KAoem MUda Sulawesi Tenggara</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-secondary-container text-primary font-label-sm text-label-sm rounded shrink-0 font-medium">Consent Verified</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-earth-ochre">location_on</span>
+<span>Aproksimasi: Kendari &amp; Konawe</span>
+<span>•</span>
+<span class="text-primary font-medium">Youth Fellow</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Mengorganisir pemuda desa dalam program ekowisata mangrove dan pembukuan hasil hutan bukan kayu (HHBK).
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Ekowisata Komunal</span>
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Sertifikasi Kayu Rakyat</span>
+</div>
+</article>
+<!-- Member 5: Lukas Waromi -->
+<article class="bg-surface-pure p-4 rounded-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-2.5">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-forest-dark text-on-primary flex items-center justify-center font-title-md font-bold shrink-0">
+                  LW
+                </div>
+<div>
+<h4 class="font-title-md text-title-md text-forest-dark leading-tight">Lukas Waromi</h4>
+<p class="font-label-sm text-label-sm text-moss-muted">Pemantau Spasial Hutan Adat Papua</p>
+</div>
+</div>
+<span class="px-2 py-0.5 bg-secondary-container text-primary font-label-sm text-label-sm rounded shrink-0 font-medium">Consent Verified</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-earth-ochre">location_on</span>
+<span>Aproksimasi: Boven Digoel, Papua Selatan</span>
+<span>•</span>
+<span class="text-primary font-medium">Investigator Tapak</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Melakukan pemantauan langsung terhadap deforestasi lahan gambut dan kanal perkebunan kelapa sawit skala industri.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Investigasi Gambut</span>
+<span class="px-2 py-0.5 bg-surface-cream text-forest-dark font-label-sm text-label-sm rounded">Pemantauan Konsesi Sawit</span>
+</div>
+</article>
+</div>
+<!-- Directory Footer Actions & CTA -->
+<div class="bg-surface-pure p-4 rounded-lg shadow-sm flex flex-col gap-2.5">
+<button class="w-full py-2.5 px-4 bg-forest-dark hover:bg-primary text-on-primary font-label-md text-label-md rounded flex items-center justify-center gap-2 transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">download_for_offline</span>
+<span>Unduh Direktori Anggota Terverifikasi (PDF Publik)</span>
+</button>
+<a class="w-full py-2.5 px-4 bg-surface-container hover:bg-surface-container-high text-forest-dark font-label-md text-label-md rounded text-center transition-colors flex items-center justify-center gap-1.5" href="./pendaftaran_anggota_kaoem_telapak.html">
+<span>Daftar Menjadi Anggota Kaoem Telapak</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Analytical Chart Row: Connected Spatial & Demographic Metrics -->
+<section class="w-full py-8 px-gutter lg:px-gutter-desktop bg-surface-pure">
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
+<div>
+<span class="font-label-sm text-label-sm text-earth-ochre uppercase font-bold tracking-wider">Analitik Komposisi Spasial</span>
+<h2 class="font-headline-md text-headline-md text-forest-dark">Demografi dan Matriks Keahlian Jaringan</h2>
+</div>
+<div class="text-moss-muted font-label-sm text-label-sm">
+          Menampilkan korelasi sebaran wilayah dengan fokus mandat advokasi lapangan
+        </div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Chart: Bar chart Sebaran Provinsi Teratas (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-cream p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-forest-dark">Sebaran Anggota Berdasarkan Provinsi Teratas</h3>
+<span class="px-2 py-0.5 bg-surface-pure text-moss-muted font-label-sm text-label-sm rounded shadow-xs">Total 24 Provinsi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Konsentrasi kader di wilayah prioritas bentang alam hutan alam primer &amp; pesisir.</p>
+</div>
+<!-- Custom SVG Bar Chart -->
+<div class="mt-6 flex flex-col gap-3">
+<!-- Kaltim -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-forest-dark">Kalimantan Timur (Kutai Barat &amp; Mahakam)</span>
+<span class="text-forest-dark font-bold">124 Kader (14.6%)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-forest-dark rounded" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Maluku -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-forest-dark">Kepulauan Maluku (Seram, Buru, Aru)</span>
+<span class="text-forest-dark font-bold">112 Kader (13.1%)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-earth-ochre rounded" style="width: 80%;"></div>
+</div>
+</div>
+<!-- Papua & Papua Barat -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-forest-dark">Papua Raya (Boven Digoel, Sorong, Jayapura)</span>
+<span class="text-forest-dark font-bold">98 Kader (11.5%)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-primary-container rounded" style="width: 70%;"></div>
+</div>
+</div>
+<!-- Sulawesi Tengah -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-forest-dark">Sulawesi Tengah (Morowali &amp; Poso)</span>
+<span class="text-forest-dark font-bold">76 Kader (8.9%)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-forest-dark rounded" style="width: 55%;"></div>
+</div>
+</div>
+<!-- Sulawesi Tenggara -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-forest-dark">Sulawesi Tenggara (Konawe &amp; Kolaka)</span>
+<span class="text-forest-dark font-bold">68 Kader (8.0%)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-earth-ochre rounded" style="width: 48%;"></div>
+</div>
+</div>
+<!-- Jawa Barat (Seknas) -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-forest-dark">Jawa Barat &amp; DKI (Seknas &amp; Riset Bogor)</span>
+<span class="text-forest-dark font-bold">54 Kader (6.3%)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-primary-container rounded" style="width: 38%;"></div>
+</div>
+</div>
+<!-- Aceh -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-forest-dark">Aceh &amp; Ekosistem Leuser</span>
+<span class="text-forest-dark font-bold">47 Kader (5.5%)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded overflow-hidden">
+<div class="h-full bg-forest-dark rounded" style="width: 34%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex items-center justify-between text-[11px] font-label-sm text-moss-muted">
+<span>* Sisa 271 kader terdistribusi di 17 provinsi nusantara lainnya</span>
+<span>Data Agregat per Q3 2024</span>
+</div>
+</div>
+<!-- Right Chart: Donut Chart Komposisi Keahlian & Peran (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-cream p-6 rounded-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-forest-dark">Komposisi Keahlian &amp; Peran</h3>
+<span class="material-symbols-outlined text-earth-ochre text-lg">pie_chart</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Distribusi keahlian spesifik anggota dalam menjaga tapak.</p>
+</div>
+<!-- Inline SVG Donut Visualization -->
+<div class="my-6 flex items-center justify-center gap-6">
+<div class="relative w-44 h-44 shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 100 100">
+<!-- Investigasi 32% (stroke-dasharray="32 68", offset 0) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#0F3226" stroke-dasharray="32 68" stroke-dashoffset="0" stroke-width="15"></circle>
+<!-- Advokasi Hukum 24% (stroke-dasharray="24 76", offset -32) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#C28B59" stroke-dasharray="24 76" stroke-dashoffset="-32" stroke-width="15"></circle>
+<!-- Pemberdayaan Ekonomi 22% (stroke-dasharray="22 78", offset -56) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#184D3B" stroke-dasharray="22 78" stroke-dashoffset="-56" stroke-width="15"></circle>
+<!-- Edukasi Kaum Muda 22% (stroke-dasharray="22 78", offset -78) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#6E8771" stroke-dasharray="22 78" stroke-dashoffset="-78" stroke-width="15"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+<span class="font-headline-md text-headline-md font-bold text-forest-dark leading-none">850</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Kader Aktif</span>
+</div>
+</div>
+<!-- Chart Legends Column -->
+<div class="flex flex-col gap-2 font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-forest-dark shrink-0"></span>
+<div>
+<span class="font-semibold text-forest-dark">32%</span>
+<span class="text-on-surface-variant ml-1">Investigasi &amp; GTID</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-earth-ochre shrink-0"></span>
+<div>
+<span class="font-semibold text-forest-dark">24%</span>
+<span class="text-on-surface-variant ml-1">Advokasi &amp; Paralegal</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container shrink-0"></span>
+<div>
+<span class="font-semibold text-forest-dark">22%</span>
+<span class="text-on-surface-variant ml-1">Pemberdayaan Ekonomi</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-moss-muted shrink-0"></span>
+<div>
+<span class="font-semibold text-forest-dark">22%</span>
+<span class="text-on-surface-variant ml-1">Edukasi KAoem MUda</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-pure p-3 rounded font-body-sm text-body-sm text-on-surface-variant flex items-start gap-2">
+<span class="material-symbols-outlined text-forest-dark text-base shrink-0 mt-0.5">school</span>
+<span>Seluruh kader melalui pelatihan berkala bersertifikat pengawasan kehutanan independen dan etika riset ulayat.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive script for UI feedback -->
+<script>
+    function highlightRegion(regionId) {
+      const cards = document.querySelectorAll('#direktori-kader article');
+      cards.forEach(card => {
+        card.classList.remove('ring-2', 'ring-earth-ochre', 'bg-surface-container-low');
+      });
+      if (regionId === 'seram') {
+        const seramCard = cards[0];
+        if (seramCard) {
+          seramCard.classList.add('ring-2', 'ring-earth-ochre', 'bg-surface-container-low');
+          seramCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-7xl mx-auto px-gutter lg:px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8"><div class="lg:col-span-4 flex flex-col gap-4"><div class="flex items-center gap-3"><img src="./assets/kaoem-telapak-logo.png" alt="Kaoem Telapak" class="kt-logo"><span class="font-headline-sm text-headline-sm text-forest-dark uppercase">Kaoem Telapak</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Organisasi masyarakat sipil berbasis keanggotaan didirikan di Bogor, berikhtiar mengawal tata kelola hutan adil, hak masyarakat adat, dan kedaulatan komunitas pesisir serta pedalaman nusantara.</p><div class="font-body-sm text-body-sm text-on-surface-variant space-y-1"><p class="font-semibold text-on-surface">Sekretariat Nasional:</p><p>Jl. Sempur No. 5, Bogor Tengah, Kota Bogor</p><p>Jawa Barat 16129, Indonesia</p></div><div class="flex items-center gap-3 pt-2"><span class="px-2.5 py-1 bg-surface-container-high text-forest-dark font-label-sm text-label-sm rounded">NGOsource Equivalency Certified</span><span class="px-2.5 py-1 bg-surface-container-high text-forest-dark font-label-sm text-label-sm rounded">SAM.gov UEID: MUC1QNJ3S7X</span></div></div><div class="lg:col-span-2 flex flex-col gap-3"><h4 class="font-title-md text-title-md text-forest-dark">Isu &amp; Program</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="program-kami" href="./program_kami_kaoem_telapak.html">Forest &amp; Land Governance</a></li><li><a class="hover:text-primary transition-colors" data-path="program-kami" href="./program_kami_kaoem_telapak.html">Sustainable Livelihood</a></li><li><a class="hover:text-primary transition-colors" data-path="program-kami" href="./program_kami_kaoem_telapak.html">Youth Corner &amp; Regenerasi</a></li><li><a class="hover:text-primary transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html">Atlas Dampak Nusantara</a></li><li><a class="hover:text-primary transition-colors" data-path="analitik-dampak-spasial" href="./analitik_dampak_spasial.html">Metrik Capaian Lapangan</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-3"><h4 class="font-title-md text-title-md text-forest-dark">Kelembagaan</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="tentang-kami" href="./tentang_kami_kaoem_telapak.html">Visi, Misi &amp; Sejarah</a></li><li><a class="hover:text-primary transition-colors" data-path="struktur-organisasi" href="./struktur_organisasi_kaoem_telapak.html">Dewan &amp; Badan Pengurus</a></li><li><a class="hover:text-primary transition-colors" data-path="safeguard-policy" href="./safeguard-policy.html">Kebijakan Perlindungan Sosial</a></li><li><a class="hover:text-primary transition-colors" data-path="peta-sebaran-anggota" href="./peta_sebaran_anggota.html">Jaringan Keanggotaan</a></li><li><a class="hover:text-primary transition-colors" data-path="kontak-dan-kolaborasi" href="./kontak-dan-kolaborasi.html">Peluang Kerjasama</a></li></ul></div><div class="lg:col-span-4 flex flex-col gap-4"><h4 class="font-title-md text-title-md text-forest-dark">Warta Rimba &amp; Publikasi</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Dapatkan buletin investigasi lapangan, laporan pemantauan deforestasi independen, dan cerita kedaulatan warga berkala.</p><form class="flex flex-col sm:flex-row gap-2"><input class="flex-1 px-4 py-2.5 rounded bg-surface-pure text-on-surface placeholder:text-moss-muted font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Alamat surel Anda..." type="email"><button class="px-5 py-2.5 bg-primary text-on-primary hover:bg-forest-dark font-label-md text-label-md rounded shadow-sm transition-colors" type="submit">Langganan</button></form><div class="flex items-center gap-4 text-on-surface-variant pt-2"><a class="p-2 rounded bg-surface-container hover:text-primary transition-colors" data-path="publikasi-dan-cerita" href="./publikasi-dan-cerita.html" title="Dokumen Publik"><span class="material-symbols-outlined text-xl">description</span></a><a class="p-2 rounded bg-surface-container hover:text-primary transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html" title="Peta Geospasial"><span class="material-symbols-outlined text-xl">map</span></a><a class="p-2 rounded bg-surface-container hover:text-primary transition-colors" data-path="analitik-dampak-spasial" href="./analitik_dampak_spasial.html" title="Analitik Spasial"><span class="material-symbols-outlined text-xl">query_stats</span></a><a class="p-2 rounded bg-surface-container hover:text-primary transition-colors" href="mailto:kaoem@kaoemtelapak.org" title="Email Sekretariat"><span class="material-symbols-outlined text-xl">mail</span></a></div></div></div><div class="mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-on-surface-variant"><p>© 2025 Perkumpulan Kaoem Telapak. Hak cipta dilindungi undang-undang.</p><div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" data-path="safeguard-policy" href="./safeguard-policy.html">Kebijakan Pengamanan (Safeguard)</a><a class="hover:text-primary transition-colors" data-path="kontak-dan-kolaborasi" href="./kontak-dan-kolaborasi.html">Kanal Whistleblowing</a><a class="hover:text-primary transition-colors" href="./dashboard_anggaran_pagu_proyek_kaoem_telapak.html">Transparansi Finansial</a></div></div></div></footer></body></html>

@@ -1,0 +1,729 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Kaoem Telapak — Perkumpulan Gerakan Kerakyatan Menuju Kedaulatan Sumber Daya Alam</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed-variant":"#394b38","surface-dim":"#d0ddd4","inverse-surface":"#28332d","error-container":"#ffdad6","on-secondary-fixed":"#0e1f10","surface":"#f0fdf3","tertiary-fixed-dim":"#f7ba84","on-secondary-container":"#546853","inverse-primary":"#9cd2ba","error":"#ba1a1a","on-tertiary-container":"#e1a672","outline-variant":"#c0c9c2","primary":"#003626","on-primary":"#ffffff","outline":"#707974","surface-variant":"#d9e6dc","moss-muted":"#6E8771","secondary-fixed-dim":"#b7ccb4","forest-dark":"#0F3226","surface-cream":"#F8F7F2","primary-container":"#184d3b","primary-fixed":"#b8eed5","surface-container":"#e4f1e7","surface-container-highest":"#d9e6dc","on-tertiary-fixed-variant":"#673d12","tertiary-container":"#643b10","on-primary-fixed-variant":"#1b4f3d","earth-ochre":"#C28B59","charcoal-ink":"#202B25","inverse-on-surface":"#e7f4ea","on-error":"#ffffff","surface-container-high":"#dfebe2","secondary":"#50634f","on-background":"#131e18","surface-container-low":"#eaf7ed","surface-pure":"#FFFFFF","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","surface-tint":"#356854","tertiary":"#492600","on-surface-variant":"#404944","secondary-container":"#d0e6cc","secondary-fixed":"#d3e8cf","surface-bright":"#f0fdf3","sand-border":"#E3E0D5","on-tertiary-fixed":"#2d1600","on-primary-fixed":"#002116","primary-fixed-dim":"#9cd2ba","on-primary-container":"#88bda6","background":"#f0fdf3","on-secondary":"#ffffff","tertiary-fixed":"#ffdcc0","on-error-container":"#93000a","on-surface":"#131e18"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{gutter:"1.5rem","space-xl":"3rem","gutter-desktop":"2.5rem","space-xs":"0.25rem",margin:"1.25rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.75rem","margin-tablet":"2.5rem","margin-desktop":"4.5rem"},fontFamily:{"label-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"26px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"display-mobile":["38px",{lineHeight:"46px",letterSpacing:"-0.02em",fontWeight:"800"}],"display":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"title-md":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-sm":["22px",{lineHeight:"30px",letterSpacing:"0em",fontWeight:"600"}]}}}};</script><link rel="stylesheet" href="./assets/leaflet/leaflet.css" crossorigin=""><script defer="" src="./assets/leaflet/leaflet.js" crossorigin=""></script><link rel="stylesheet" href="./assets/site.css"><script defer src="./assets/map-data.js"></script><script defer="" src="./assets/site.js"></script></head><body class="bg-surface-cream font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-cream/95 backdrop-blur-md shadow-[0_1px_8px_rgba(32,43,37,0.04)]"><div class="bg-surface-container-high"><div class="max-w-7xl mx-auto px-gutter lg:px-gutter-desktop h-10 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-6"><span>Bogor, Jawa Barat (WIB)</span><span class="hidden sm:inline">•</span><a class="hover:text-primary transition-colors" href="mailto:kaoem@kaoemtelapak.org">kaoem@kaoemtelapak.org</a><span class="hidden md:inline">•</span><a class="hidden md:inline hover:text-primary transition-colors" href="tel:+622518324578">+62 (0251) 8324578</a></div><div class="flex items-center gap-4"><div class="flex items-center gap-2 font-label-sm"><a class="text-primary font-bold" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">ID</a><span class="text-outline-variant">|</span><a class="text-on-surface-variant hover:text-primary transition-colors" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">EN</a></div><a class="hidden lg:inline-block px-3 py-1 bg-surface-container text-on-secondary-container hover:bg-surface-container-highest hover:text-on-surface rounded transition-colors" data-path="bergabung" href="./pendaftaran_anggota_kaoem_telapak.html">Relawan &amp; Jaringan</a></div></div></div><div class="max-w-7xl mx-auto px-gutter lg:px-gutter-desktop h-20 flex items-center justify-between gap-6"><div class="flex items-center gap-4"><a class="flex items-center gap-3 group" data-path="beranda" href="./index.html"><img src="./assets/kaoem-telapak-logo.png" alt="Kaoem Telapak" class="kt-logo"></a></div><nav class="hidden xl:flex items-center gap-1 font-label-md text-label-md" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="beranda" href="./index.html">Beranda</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="tentang-kami" href="./tentang_kami_kaoem_telapak.html">Tentang Kami</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="struktur-organisasi" href="./struktur_organisasi_kaoem_telapak.html">Tata Kelola</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="program-kami" href="./program_kami_kaoem_telapak.html">Program</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html">Dampak &amp; Peta</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="publikasi-dan-cerita" href="./publikasi-dan-cerita.html">Publikasi</a><a class="px-3 py-2 text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded transition-colors" data-path="kontak-dan-kolaborasi" href="./kontak-dan-kolaborasi.html">Kontak</a></nav><div class="flex items-center gap-3"><a class="px-5 py-2.5 bg-earth-ochre text-on-primary hover:bg-tertiary-container font-label-md text-label-md rounded shadow-sm hover:translate-y-[-1px] transition-all flex items-center gap-2" data-path="dukung-kami" href="./dukung-kami.html"><span>Dukung Kami</span><span class="material-symbols-outlined text-base">volunteer_activism</span></a><a class="kt-login-link" href="./masuk_pemulihan_akun_kaoem_telapak.html">Masuk</a><button class="xl:hidden p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded" type="button"><span class="material-symbols-outlined">menu</span></button></div></div><div class="border-t border-sand-border bg-surface-container-low/95"><div class="max-w-7xl mx-auto px-gutter lg:px-gutter-desktop h-11 flex items-center justify-between gap-4 font-label-sm text-label-sm"><div class="flex items-center gap-2 overflow-x-auto py-1 scrollbar-none"><span class="text-primary font-bold flex items-center gap-1 shrink-0 pr-2 border-r border-sand-border"><span class="material-symbols-outlined text-sm">map</span>Sistem Informasi Geospasial</span><nav class="flex items-center gap-1.5 shrink-0" data-active-classes="bg-primary text-on-primary font-bold shadow-xs"><a class="px-2.5 py-1 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html">Atlas Dampak Nusantara</a><a class="px-2.5 py-1 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded transition-colors" data-path="peta-sebaran-anggota" href="./peta_sebaran_anggota.html">Peta Sebaran Anggota</a><a class="px-2.5 py-1 text-on-surface-variant hover:text-primary hover:bg-surface-container rounded transition-colors" data-path="peta-cakupan-proyek" href="./peta_cakupan_proyek.html">Peta Cakupan Proyek</a><a aria-current="page" class="px-2.5 py-1 rounded transition-colors bg-primary text-on-primary font-bold shadow-xs" data-path="analitik-dampak-spasial" href="./analitik_dampak_spasial.html">Analitik Dampak Spasial</a></nav></div><div class="hidden sm:flex items-center gap-2 text-moss-muted shrink-0"><span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span><span>Basis Data Spasial Aktif v2.4</span></div></div></div></header><main class="w-full pt-[10.25rem] bg-surface-cream min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Command & GIS Control Strip -->
+<section class="w-full bg-surface-cream px-gutter lg:px-gutter-desktop pt-6 pb-4">
+<div class="max-w-7xl mx-auto flex flex-col gap-4">
+<!-- Breadcrumb & Status Pill -->
+<div class="flex flex-wrap items-center justify-between gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2">
+<a class="hover:text-primary transition-colors" data-path="beranda" href="./index.html">Beranda</a>
+<span class="text-moss-muted">/</span>
+<a class="hover:text-primary transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html">Dampak &amp; Peta</a>
+<span class="text-moss-muted">/</span>
+<span class="text-forest-dark font-semibold">Analitik Dampak Spasial</span>
+</nav>
+<div class="flex items-center gap-2 bg-surface-container-high px-3 py-1 rounded text-primary font-label-sm text-label-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Pemutakhiran Spasial Sinkron: 14 Oktober 2026</span>
+</div>
+</div>
+<!-- Module Header + Controls Ribbon -->
+<div class="bg-surface-pure rounded-xl p-4 lg:p-6 shadow-sm flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6">
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2 text-earth-ochre font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-base">monitoring</span>
+<span>Dashboard Kinerja Ekologis &amp; Spasial Nusantara</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-forest-dark tracking-tight">
+            Analitik Dampak Spasial 2020–2026
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Sistem evaluasi berbasis bukti mengukur keefektifan advokasi hak ulayat, pemulihan kanopi hutan tropis, serta pertumbuhan rantai pasok komunal non-deforestasi di seluruh simpul Kaoem Telapak.
+          </p>
+</div>
+<!-- Controls: Timeframe Filter + Export Action -->
+<div class="flex flex-wrap items-center gap-3 w-full xl:w-auto shrink-0">
+<div class="flex items-center bg-surface-container rounded-lg p-1 font-label-sm text-label-sm">
+<button class="px-3 py-1.5 rounded bg-surface-pure text-primary font-semibold shadow-xs" type="button">
+              2020 – 2026 (Semua)
+            </button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-primary transition-colors" type="button">
+              Q3 2026
+            </button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-primary transition-colors" type="button">
+              MoU EUDR
+            </button>
+</div>
+<div class="relative inline-block text-left">
+<button class="px-4 py-2 bg-primary hover:bg-forest-dark text-on-primary font-label-md text-label-md rounded flex items-center gap-2 shadow-xs transition-colors" id="exportBtn" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Unduh Data Spasial</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 Strategic Impact KPIs -->
+<section class="w-full px-gutter lg:px-gutter-desktop py-4">
+<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- KPI 1 -->
+<div class="bg-surface-pure rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-2px] transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">nature_people</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-low text-primary font-semibold">
+<span class="material-symbols-outlined text-xs">trending_up</span> +18.4% YoY
+          </span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-moss-muted uppercase tracking-wider block">Tutupan Hutan Bertahan</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-forest-dark font-extrabold">2.410.000</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Hektar</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Terverifikasi multispektral di 43 lanskap adat binaan bersama penjaga rimba lokal.
+          </p>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-pure rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-2px] transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-earth-ochre/10 rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-10 h-10 rounded bg-secondary-container flex items-center justify-center text-forest-dark">
+<span class="material-symbols-outlined">co2</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-low text-forest-dark font-semibold">
+            Metode IPCC AFOLU
+          </span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-moss-muted uppercase tracking-wider block">Emisi Karbon Dicegah</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-forest-dark font-extrabold">4.8</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Juta Ton CO₂e</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Mencegah konversi gambut dalam dan deforestasi terencana korporasi sawit &amp; HTI.
+          </p>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-pure rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-2px] transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-10 h-10 rounded bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary font-semibold">
+            24 Provinsi
+          </span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-moss-muted uppercase tracking-wider block">Komunitas Adat Terlindungi</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-forest-dark font-extrabold">142</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Masyarakat Adat</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Memegang SK Hutan Adat &amp; pemetaan partisipatif berstatus in-progress legalitas.
+          </p>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-pure rounded-xl p-5 shadow-sm flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-2px] transition-all">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary-fixed/20 rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between mb-3">
+<div class="w-10 h-10 rounded bg-tertiary-fixed flex items-center justify-center text-forest-dark">
+<span class="material-symbols-outlined">gavel</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-low text-primary font-semibold">
+            32 Kasus Advokasi
+          </span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-moss-muted uppercase tracking-wider block">Tingkat Keberhasilan Advokasi</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-forest-dark font-extrabold">84.6%</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Win Rate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+            Termasuk pencabutan izin konsesi ilegal, sanksi KLHK, dan perlindungan sasi laut.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Regional Comparison & Spatial Map Section -->
+<section class="w-full px-gutter lg:px-gutter-desktop py-4">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6 items-stretch">
+<!-- LEFT: Mini Interactive Synchronized Map (45%) -->
+<div class="w-full lg:w-[45%] bg-surface-pure rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-earth-ochre tracking-wider font-semibold">Klaster Spasial Wilayah</span>
+<h2 class="font-title-md text-title-md text-forest-dark font-bold">Indeks Dampak Bio-Kultural</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-forest-dark font-label-sm text-label-sm">
+              Skor 0–100
+            </span>
+</div>
+<!-- Metrik Switcher for Map -->
+<div class="flex flex-wrap items-center gap-1.5 p-1 bg-surface-container-low rounded-lg font-label-sm text-label-sm">
+<button class="px-2.5 py-1 rounded bg-surface-pure text-primary font-semibold shadow-xs">Hektar Terpantau</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-primary transition-colors">Kasus Teradvokasi</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-primary transition-colors">Kader GTID</button>
+</div>
+<!-- Choropleth Canvas & Interactive Vector Schematic -->
+<div class="kt-map" id="kt-map" aria-label="Peta interaktif Indonesia"><p class="map-loading">Memuat peta. Periksa koneksi internet jika peta tidak tampil.</p></div><p class="kt-map-note">Peta dasar: OpenStreetMap. Penanda adalah contoh lokasi wilayah, bukan koordinat anggota atau batas proyek terverifikasi.</p>
+</div>
+<!-- Island Clusters List -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-4">
+<div class="bg-surface-container-low p-2.5 rounded text-left">
+<span class="font-label-sm text-label-sm text-moss-muted block">Sumatera</span>
+<span class="font-title-md text-title-md font-bold text-forest-dark">68 Pts</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant block mt-0.5">Aceh, Riau, Jambi</span>
+</div>
+<div class="bg-primary-container text-on-primary p-2.5 rounded text-left shadow-xs">
+<span class="font-label-sm text-label-sm text-primary-fixed block font-medium">Kalimantan</span>
+<span class="font-title-md text-title-md font-bold">94 Pts</span>
+<span class="font-label-sm text-[10px] text-primary-fixed-dim block mt-0.5">Kaltim, Kalbar, Kalteng</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded text-left">
+<span class="font-label-sm text-label-sm text-moss-muted block">Sulawesi</span>
+<span class="font-title-md text-title-md font-bold text-forest-dark">76 Pts</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant block mt-0.5">Konsel, Morowali</span>
+</div>
+<div class="bg-primary-container text-on-primary p-2.5 rounded text-left shadow-xs">
+<span class="font-label-sm text-label-sm text-primary-fixed block font-medium">Maluku &amp; Papua</span>
+<span class="font-title-md text-title-md font-bold">92 Pts</span>
+<span class="font-label-sm text-[10px] text-primary-fixed-dim block mt-0.5">Seram, Aru, Boven Digoel</span>
+</div>
+</div>
+</div>
+<!-- RIGHT: Regional Benchmark Comparative Card (55%) -->
+<div class="w-full lg:w-[55%] bg-surface-pure rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<!-- Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-earth-ochre tracking-wider font-semibold">Analisis Head-to-Head</span>
+<h3 class="font-title-md text-title-md text-forest-dark font-bold">
+                Komparasi Lintas Wilayah: Kalimantan Timur vs. Maluku
+              </h3>
+</div>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded bg-secondary-container text-forest-dark font-label-sm text-label-sm font-semibold self-start sm:self-auto">
+<span class="material-symbols-outlined text-sm">compare_arrows</span> Tolok Ukur Aktif
+            </span>
+</div>
+<!-- Comparison Table / Grid Layout -->
+<div class="space-y-3 pt-2">
+<!-- Metric 1 -->
+<div class="bg-surface-container-low rounded-lg p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="w-full sm:w-1/3">
+<span class="font-label-md text-label-md text-forest-dark font-semibold block">Luas Wilayah Intervensi</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Peta indikatif adat &amp; izin</span>
+</div>
+<div class="flex items-center gap-4 w-full sm:w-2/3 justify-between">
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-moss-muted uppercase font-bold block">Kalimantan Timur</span>
+<span class="font-title-md text-title-md font-bold text-forest-dark">382.400 Ha</span>
+</div>
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-earth-ochre uppercase font-bold block">Kepulauan Maluku</span>
+<span class="font-title-md text-title-md font-bold text-forest-dark">245.000 Ha</span>
+</div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-low rounded-lg p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="w-full sm:w-1/3">
+<span class="font-label-md text-label-md text-forest-dark font-semibold block">Kader GTID Terlatih</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Verifikator GPS darat</span>
+</div>
+<div class="flex items-center gap-4 w-full sm:w-2/3 justify-between">
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-moss-muted uppercase font-bold block">Kalimantan Timur</span>
+<span class="font-title-md text-title-md font-bold text-forest-dark">74 Orang</span>
+<span class="font-label-sm text-[11px] text-primary block mt-0.5">38 Pemuda Dayak</span>
+</div>
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-earth-ochre uppercase font-bold block">Kepulauan Maluku</span>
+<span class="font-title-md text-title-md font-bold text-forest-dark">86 Orang</span>
+<span class="font-label-sm text-[11px] text-primary block mt-0.5">52 Penjaga Sasi Adat</span>
+</div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-low rounded-lg p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="w-full sm:w-1/3">
+<span class="font-label-md text-label-md text-forest-dark font-semibold block">Fokus Isu Utama</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Tekanan ancaman ruang</span>
+</div>
+<div class="flex items-center gap-4 w-full sm:w-2/3 justify-between">
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-moss-muted uppercase font-bold block">Kalimantan Timur</span>
+<span class="font-body-sm text-body-sm font-semibold text-forest-dark">Ekspansi Sawit &amp; Koridor Tambang IKN</span>
+</div>
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-earth-ochre uppercase font-bold block">Kepulauan Maluku</span>
+<span class="font-body-sm text-body-sm font-semibold text-forest-dark">Ilegal Logging Hutan Adat &amp; Sasi Laut</span>
+</div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-low rounded-lg p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="w-full sm:w-1/3">
+<span class="font-label-md text-label-md text-forest-dark font-semibold block">Ekonomi Komunal</span>
+<span class="font-label-sm text-label-sm text-moss-muted">BUMDes &amp; Koperasi</span>
+</div>
+<div class="flex items-center gap-4 w-full sm:w-2/3 justify-between">
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-moss-muted uppercase font-bold block">Kalimantan Timur</span>
+<div class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-sm">arrow_upward</span>
+<span class="font-body-sm text-body-sm">+38% Pendapatan</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Madu Hutan &amp; Rotan Alami</span>
+</div>
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-earth-ochre uppercase font-bold block">Kepulauan Maluku</span>
+<div class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-sm">arrow_upward</span>
+<span class="font-body-sm text-body-sm">+46% Pendapatan</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Minyak Atsiri Kayu Putih &amp; Pala</span>
+</div>
+</div>
+</div>
+<!-- Metric 5 -->
+<div class="bg-surface-container-low rounded-lg p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="w-full sm:w-1/3">
+<span class="font-label-md text-label-md text-forest-dark font-semibold block">Status Regulasi Daerah</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Ketahanan produk hukum</span>
+</div>
+<div class="flex items-center gap-4 w-full sm:w-2/3 justify-between">
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-moss-muted uppercase font-bold block">Kalimantan Timur</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary">Perda Pengakuan MHA</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant block">Tahap verifikasi teknis pansus</span>
+</div>
+<div class="w-1/2 p-2 bg-surface-pure rounded">
+<span class="font-label-sm text-[10px] text-earth-ochre uppercase font-bold block">Kepulauan Maluku</span>
+<span class="font-body-sm text-body-sm font-semibold text-forest-dark">Perda Wilayah Kelola Adat</span>
+<span class="font-label-sm text-[11px] text-primary font-bold block">Disahkan Paripurna DPRD</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-wrap items-center justify-between gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<span>Koreksi silang satelit terakhir: 24 jam lalu via Sentinel Hub Cloud API</span>
+<a class="text-primary hover:underline font-semibold flex items-center gap-1" href="./analitik_dampak_spasial.html">
+            Lihat Analisis Komparatif Penuh <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Longitudinal Time-Series & Program Analytics (4 Charts Grid) -->
+<section class="w-full px-gutter lg:px-gutter-desktop py-4">
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-earth-ochre tracking-wider font-semibold">Tren Spasial &amp; Output Nyata</span>
+<h2 class="font-headline-sm text-headline-sm text-forest-dark font-bold">
+            Metrik Capaian Lapangan Multi-Tahun (2020 – 2026)
+          </h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary inline-block"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-3">Data Terverifikasi</span>
+<span class="w-3 h-3 rounded-full bg-earth-ochre inline-block"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target Rencana Strategis</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- Chart 1: Time-Series Area Pemantauan -->
+<div class="bg-surface-pure rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-moss-muted font-bold block">Trajektori Spasial (YoY)</span>
+<h3 class="font-title-md text-title-md text-forest-dark font-bold">
+                  Pertumbuhan Luas Area Pemantauan Spasial
+                </h3>
+</div>
+<span class="px-2.5 py-1 bg-surface-container rounded text-primary font-bold font-label-sm text-label-sm">
+                +270% dalam 6 Tahun
+              </span>
+</div>
+<!-- Custom SVG Area & Line Chart with Milestones -->
+<div class="relative w-full h-56 pt-2">
+<svg class="w-full h-full overflow-visible" fill="none" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+<!-- Chart Grids -->
+<line stroke="#E3E0D5" stroke-dasharray="2 3" x1="40" x2="480" y1="30" y2="30"></line>
+<line stroke="#E3E0D5" stroke-dasharray="2 3" x1="40" x2="480" y1="80" y2="80"></line>
+<line stroke="#E3E0D5" stroke-dasharray="2 3" x1="40" x2="480" y1="130" y2="130"></line>
+<line stroke="#c0c9c2" x1="40" x2="480" y1="180" y2="180"></line>
+<!-- Y-Axis Labels -->
+<text fill="#707974" font-size="10" text-anchor="end" x="32" y="34">2.5M Ha</text>
+<text fill="#707974" font-size="10" text-anchor="end" x="32" y="84">1.8M Ha</text>
+<text fill="#707974" font-size="10" text-anchor="end" x="32" y="134">1.1M Ha</text>
+<text fill="#707974" font-size="10" text-anchor="end" x="32" y="184">0.5M Ha</text>
+<!-- Gradient definition -->
+<defs>
+<linearGradient id="areaGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#184d3b" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#184d3b" stop-opacity="0.0"></stop>
+</linearGradient>
+</defs>
+<!-- Area Fill -->
+<path d="M 60 165 L 140 148 L 220 125 L 300 90 L 380 62 L 460 38 L 460 180 L 60 180 Z" fill="url(#areaGradient)"></path>
+<!-- Trend Line -->
+<path d="M 60 165 L 140 148 L 220 125 L 300 90 L 380 62 L 460 38" stroke="#003626" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Data Points & Labels -->
+<g>
+<circle cx="60" cy="165" fill="#003626" r="4"></circle>
+<text fill="#707974" font-size="10" text-anchor="middle" x="60" y="196">2020</text>
+<text fill="#003626" font-size="9" font-weight="600" text-anchor="middle" x="60" y="155">650k</text>
+<circle cx="140" cy="148" fill="#003626" r="4"></circle>
+<text fill="#707974" font-size="10" text-anchor="middle" x="140" y="196">2021</text>
+<!-- Milestone 1 -->
+<circle cx="220" cy="125" fill="#C28B59" r="5"></circle>
+<text fill="#707974" font-size="10" text-anchor="middle" x="220" y="196">2022</text>
+<text fill="#184d3b" font-size="9" font-weight="700" text-anchor="middle" x="220" y="115">1.10M</text>
+<line stroke="#C28B59" stroke-dasharray="2 2" stroke-width="1.5" x1="220" x2="220" y1="125" y2="60"></line>
+<rect fill="#C28B59" height="18" rx="3" width="110" x="165" y="44"></rect>
+<text fill="#ffffff" font-size="8" font-weight="700" text-anchor="middle" x="220" y="56">Launch Ground-truthed.id</text>
+<circle cx="300" cy="90" fill="#003626" r="4"></circle>
+<text fill="#707974" font-size="10" text-anchor="middle" x="300" y="196">2023</text>
+<circle cx="380" cy="62" fill="#003626" r="4"></circle>
+<text fill="#707974" font-size="10" text-anchor="middle" x="380" y="196">2024</text>
+<text fill="#184d3b" font-size="9" font-weight="700" text-anchor="middle" x="380" y="52">1.85M</text>
+<!-- Milestone 2 & 2026 Endpoint -->
+<circle cx="460" cy="38" fill="#003626" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<text fill="#003626" font-size="10" font-weight="700" text-anchor="middle" x="460" y="196">2026</text>
+<text fill="#003626" font-size="11" font-weight="800" text-anchor="middle" x="460" y="26">2.41M Ha</text>
+<rect fill="#184d3b" height="18" rx="3" width="85" x="390" y="70"></rect>
+<text fill="#ffffff" font-size="8" font-weight="700" text-anchor="middle" x="432" y="82">Adopsi Regulasi EUDR</text>
+</g>
+</svg>
+</div>
+</div>
+<div class="mt-4 p-3 bg-surface-container-low rounded-lg text-on-surface-variant font-label-sm text-label-sm flex items-center justify-between">
+<span>Akurasi ground check lapangan: <strong>96.4%</strong> dari 1.840 titik sampel geo-tagged.</span>
+<span class="text-primary font-semibold">Tervalidasi Satelit Sentinel-2</span>
+</div>
+</div>
+<!-- Chart 2: Distribusi Program Per Wilayah Kerja (Stacked Bar) -->
+<div class="bg-surface-pure rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-moss-muted font-bold block">Intervensi Multi-Sektor</span>
+<h3 class="font-title-md text-title-md text-forest-dark font-bold">
+                  Distribusi Program Per Wilayah Kerja
+                </h3>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="w-2.5 h-2.5 rounded bg-primary"></span><span class="text-on-surface-variant">Gov</span>
+<span class="w-2.5 h-2.5 rounded bg-earth-ochre"></span><span class="text-on-surface-variant">Livelihood</span>
+<span class="w-2.5 h-2.5 rounded bg-secondary-container"></span><span class="text-on-surface-variant">Youth</span>
+</div>
+</div>
+<div class="space-y-4 pt-2">
+<!-- Kalimantan -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1.5">
+<span class="font-semibold text-forest-dark">Hub Kalimantan (Kaltim, Kalbar, Kalteng)</span>
+<span class="text-on-surface-variant">42 Inisiatif Aktif</span>
+</div>
+<div class="h-6 w-full bg-surface-container rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary hover:opacity-90 flex items-center justify-center text-[10px] text-on-primary font-bold transition-opacity" style="width: 55%" title="Governance: 55%">55%</div>
+<div class="bg-earth-ochre hover:opacity-90 flex items-center justify-center text-[10px] text-on-primary font-bold transition-opacity" style="width: 30%" title="Livelihood: 30%">30%</div>
+<div class="bg-secondary flex items-center justify-center text-[10px] text-on-secondary font-bold" style="width: 15%" title="Youth: 15%">15%</div>
+</div>
+</div>
+<!-- Maluku & Papua -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1.5">
+<span class="font-semibold text-forest-dark">Hub Maluku &amp; Tanah Papua</span>
+<span class="text-on-surface-variant">36 Inisiatif Aktif</span>
+</div>
+<div class="h-6 w-full bg-surface-container rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary flex items-center justify-center text-[10px] text-on-primary font-bold" style="width: 45%" title="Governance: 45%">45%</div>
+<div class="bg-earth-ochre flex items-center justify-center text-[10px] text-on-primary font-bold" style="width: 35%" title="Livelihood: 35%">35%</div>
+<div class="bg-secondary flex items-center justify-center text-[10px] text-on-secondary font-bold" style="width: 20%" title="Youth: 20%">20%</div>
+</div>
+</div>
+<!-- Sumatera -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1.5">
+<span class="font-semibold text-forest-dark">Hub Sumatera (Aceh, Riau, Jambi)</span>
+<span class="text-on-surface-variant">28 Inisiatif Aktif</span>
+</div>
+<div class="h-6 w-full bg-surface-container rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary flex items-center justify-center text-[10px] text-on-primary font-bold" style="width: 60%" title="Governance: 60%">60%</div>
+<div class="bg-earth-ochre flex items-center justify-center text-[10px] text-on-primary font-bold" style="width: 25%" title="Livelihood: 25%">25%</div>
+<div class="bg-secondary flex items-center justify-center text-[10px] text-on-secondary font-bold" style="width: 15%" title="Youth: 15%">15%</div>
+</div>
+</div>
+<!-- Sulawesi -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1.5">
+<span class="font-semibold text-forest-dark">Hub Sulawesi (Tenggara &amp; Tengah)</span>
+<span class="text-on-surface-variant">21 Inisiatif Aktif</span>
+</div>
+<div class="h-6 w-full bg-surface-container rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary flex items-center justify-center text-[10px] text-on-primary font-bold" style="width: 50%" title="Governance: 50%">50%</div>
+<div class="bg-earth-ochre flex items-center justify-center text-[10px] text-on-primary font-bold" style="width: 25%" title="Livelihood: 25%">25%</div>
+<div class="bg-secondary flex items-center justify-center text-[10px] text-on-secondary font-bold" style="width: 25%" title="Youth: 25%">25%</div>
+</div>
+</div>
+<!-- Jawa & Nusa Tenggara -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1.5">
+<span class="font-semibold text-forest-dark">Hub Jawa &amp; Nusa Tenggara</span>
+<span class="text-on-surface-variant">15 Inisiatif Aktif</span>
+</div>
+<div class="h-6 w-full bg-surface-container rounded-lg overflow-hidden flex shadow-inner">
+<div class="bg-primary flex items-center justify-center text-[10px] text-on-primary font-bold" style="width: 30%" title="Governance: 30%">30%</div>
+<div class="bg-earth-ochre flex items-center justify-center text-[10px] text-on-primary font-bold" style="width: 40%" title="Livelihood: 40%">40%</div>
+<div class="bg-secondary flex items-center justify-center text-[10px] text-on-secondary font-bold" style="width: 30%" title="Youth: 30%">30%</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-2 border-t border-sand-border/40 flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Rasio Rata-rata Nasional: <strong>50% Tata Kelola Hutan</strong></span>
+<span>Regenerasi Muda: <strong>21%</strong></span>
+</div>
+</div>
+<!-- Chart 3: Dampak Finansial & Kemandirian Ekonomi Warga (Bar Chart) -->
+<div class="bg-surface-pure rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-moss-muted font-bold block">Sirkularitas Ekonomi Warga</span>
+<h3 class="font-title-md text-title-md text-forest-dark font-bold">
+                  Nilai Transaksi Komoditas Non-Deforestasi
+                </h3>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md font-extrabold text-forest-dark">Rp 14.8 Miliar</span>
+<span class="font-label-sm text-label-sm text-moss-muted block">Kumulatif / Tahun</span>
+</div>
+</div>
+<!-- Custom Horizontal Bar Chart of 5 Key Commodities -->
+<div class="space-y-3 pt-2">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-forest-dark font-medium">Madu Hutan Tropis &amp; HHBK (Kaltim, Jambi)</span>
+<span class="font-bold text-forest-dark">Rp 5.2 M (35%)</span>
+</div>
+<div class="w-full bg-surface-container rounded h-3 overflow-hidden">
+<div class="bg-earth-ochre h-full rounded" style="width: 72%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-forest-dark font-medium">Minyak Atsiri &amp; Pala Organik (Maluku)</span>
+<span class="font-bold text-forest-dark">Rp 4.1 M (28%)</span>
+</div>
+<div class="w-full bg-surface-container rounded h-3 overflow-hidden">
+<div class="bg-primary h-full rounded" style="width: 58%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-forest-dark font-medium">Kopi Agroforestri &amp; Kakao Terlacak (Aceh &amp; Sulbar)</span>
+<span class="font-bold text-forest-dark">Rp 2.9 M (20%)</span>
+</div>
+<div class="w-full bg-surface-container rounded h-3 overflow-hidden">
+<div class="bg-surface-tint h-full rounded" style="width: 42%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-forest-dark font-medium">Hasil Laut Berkelanjutan / Sasi Ikan (Aru &amp; Kei)</span>
+<span class="font-bold text-forest-dark">Rp 1.6 M (11%)</span>
+</div>
+<div class="w-full bg-surface-container rounded h-3 overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded" style="width: 25%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-forest-dark font-medium">Kerajinan Rotan &amp; Bambu Hutan Adat (Kalteng)</span>
+<span class="font-bold text-forest-dark">Rp 1.0 M (6%)</span>
+</div>
+<div class="w-full bg-surface-container rounded h-3 overflow-hidden">
+<div class="bg-moss-muted h-full rounded" style="width: 16%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 p-3 bg-surface-container-high rounded-lg flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-forest-dark">Dikelola <strong>48 Koperasi BUMDes</strong> Adat Binaan</span>
+<span class="text-primary font-bold">100% Bebas Izin Sawit</span>
+</div>
+</div>
+<!-- Chart 4: Metrik Penegakan Hukum & Status Gugatan (Donut Chart) -->
+<div class="bg-surface-pure rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-moss-muted font-bold block">Penyelesaian Sengketa</span>
+<h3 class="font-title-md text-title-md text-forest-dark font-bold">
+                  Status Respons &amp; Advokasi 32 Kasus Hukum
+                </h3>
+</div>
+<span class="px-2.5 py-1 bg-surface-container rounded text-primary font-bold font-label-sm text-label-sm">
+                Win Rate 84.6%
+              </span>
+</div>
+<!-- Donut Visual + Legend Split -->
+<div class="flex flex-col sm:flex-row items-center gap-6 pt-3">
+<!-- Inline Donut SVG -->
+<div class="relative w-40 h-40 shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+<!-- Background Circle Track -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#dfebe2" stroke-width="14"></circle>
+<!-- Segment 1: Inkracht / Sanksi (10 / 32 = ~31.25% -> stroke-dasharray 74.6 238.76) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#003626" stroke-dasharray="74.6 238.76" stroke-dashoffset="0" stroke-width="14"></circle>
+<!-- Segment 2: Dalam Proses (18 / 32 = ~56.25% -> stroke-dasharray 134.3 238.76) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#C28B59" stroke-dasharray="134.3 238.76" stroke-dashoffset="-74.6" stroke-width="14"></circle>
+<!-- Segment 3: Mediasi Komunal (4 / 32 = ~12.5% -> stroke-dasharray 29.8 238.76) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#50634f" stroke-dasharray="29.8 238.76" stroke-dashoffset="-208.9" stroke-width="14"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-sm text-headline-sm font-extrabold text-forest-dark">32</span>
+<span class="font-label-sm text-[10px] text-moss-muted uppercase">Kasus</span>
+</div>
+</div>
+<!-- Detailed Breakdown Legend -->
+<div class="space-y-2.5 w-full">
+<div class="p-2.5 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-earth-ochre shrink-0"></span>
+<span class="font-label-sm text-label-sm text-forest-dark font-medium">Dalam Proses Gugatan &amp; Verifikasi</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-forest-dark">18 Kasus (56%)</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-primary shrink-0"></span>
+<span class="font-label-sm text-label-sm text-forest-dark font-medium">Putusan Inkracht / Cabut Izin</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-primary">10 Kasus (31%)</span>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-secondary shrink-0"></span>
+<span class="font-label-sm text-label-sm text-forest-dark font-medium">Mediasi Komunal / Kesepakatan Adat</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-forest-dark">4 Kasus (13%)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-2 border-t border-sand-border/40 flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Audit Legal Independen: Bersama Jaringan Advokasi Tambang &amp; AMAN</span>
+<span class="text-primary font-semibold">Tercatat di Case Tracker v2</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodological Rigor & Data Quality Standards Card -->
+<section class="w-full px-gutter lg:px-gutter-desktop py-6 mb-8">
+<div class="max-w-7xl mx-auto bg-surface-pure rounded-xl p-6 lg:p-8 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left: Methodological Integrity (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<div class="flex items-center gap-2 text-earth-ochre font-label-sm text-label-sm uppercase font-semibold">
+<span class="material-symbols-outlined text-base">verified</span>
+<span>Integritas Metodologi &amp; Standar Data Geospasial</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-forest-dark font-bold">
+              Data Lapangan Terbuka yang Dapat Diuji Silang
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">
+              Seluruh metrik spasial Kaoem Telapak dibangun melalui rantai pembuktian berlapis yang menggabungkan presisi algoritma satelit global dengan kearifan lokal warga di garis depan tapak hutan.
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-low rounded-lg p-4 flex flex-col gap-2">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-bold text-sm">
+                1
+              </div>
+<h4 class="font-title-md text-title-md text-forest-dark font-semibold">Ground-Truthed.id</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Kombinasi citra Landsat-9/Sentinel-2 dengan verifikasi GPS offline di koordinat nyata oleh warga adat bersertifikasi.
+              </p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-low rounded-lg p-4 flex flex-col gap-2">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-bold text-sm">
+                2
+              </div>
+<h4 class="font-title-md text-title-md text-forest-dark font-semibold">Case Tracker v2.0</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Integrasi repositori kasus terbuka yang dapat diuji silang oleh koalisi masyarakat sipil dan jurnalisme investigatif.
+              </p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-low rounded-lg p-4 flex flex-col gap-2">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-bold text-sm">
+                3
+              </div>
+<h4 class="font-title-md text-title-md text-forest-dark font-semibold">Audit NGOsource</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Sertifikasi ekuivalensi internasional dan peninjauan tata kelola data berkala oleh pihak ketiga independen.
+              </p>
+</div>
+</div>
+</div>
+<!-- Right: Actionable Download Data Pack (4 Cols) -->
+<div class="lg:col-span-4 bg-surface-container-high rounded-xl p-6 flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold">Paket Data Terbuka</span>
+<h4 class="font-title-md text-title-md text-forest-dark font-bold">
+              Akses Dataset Lengkap
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Tersedia untuk akademisi, organisasi lingkungan, jurnalis, dan mitra strategis di bawah lisensi Creative Commons BY 4.0.
+            </p>
+</div>
+<div class="space-y-3">
+<a class="w-full px-4 py-3 bg-primary hover:bg-forest-dark text-on-primary rounded font-label-md text-label-md flex items-center justify-between shadow-xs transition-colors group" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">layers</span>
+<span>Dataset Spasial (GeoJSON)</span>
+</div>
+<span class="font-label-sm text-label-sm opacity-80 group-hover:translate-x-1 transition-transform">142 MB</span>
+</a>
+<a class="w-full px-4 py-3 bg-surface-pure hover:bg-surface-container text-forest-dark rounded font-label-md text-label-md flex items-center justify-between shadow-xs transition-colors group" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Laporan Dampak Tahunan 2026</span>
+</div>
+<span class="font-label-sm text-label-sm text-moss-muted group-hover:translate-x-1 transition-transform">PDF (8.4 MB)</span>
+</a>
+<a class="w-full px-4 py-3 bg-surface-pure hover:bg-surface-container text-forest-dark rounded font-label-md text-label-md flex items-center justify-between shadow-xs transition-colors group" aria-disabled="true" title="Fitur atau dokumen belum tersedia dalam prototipe">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">table_chart</span>
+<span>Metrik Kasus &amp; Tabulasi (CSV)</span>
+</div>
+<span class="font-label-sm text-label-sm text-moss-muted group-hover:translate-x-1 transition-transform">1.8 MB</span>
+</a>
+</div>
+<div class="pt-2 text-center">
+<span class="font-label-sm text-label-sm text-moss-muted">
+              Butuh endpoint API REST/WMS untuk GIS institusi? <br>
+<a class="text-primary font-bold hover:underline" data-path="kontak-dan-kolaborasi" href="./kontak-dan-kolaborasi.html">Hubungi Tim Data Spasial</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-7xl mx-auto px-gutter lg:px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8"><div class="lg:col-span-4 flex flex-col gap-4"><div class="flex items-center gap-3"><img src="./assets/kaoem-telapak-logo.png" alt="Kaoem Telapak" class="kt-logo"><span class="font-headline-sm text-headline-sm text-forest-dark uppercase">Kaoem Telapak</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Organisasi masyarakat sipil berbasis keanggotaan didirikan di Bogor, berikhtiar mengawal tata kelola hutan adil, hak masyarakat adat, dan kedaulatan komunitas pesisir serta pedalaman nusantara.</p><div class="font-body-sm text-body-sm text-on-surface-variant space-y-1"><p class="font-semibold text-on-surface">Sekretariat Nasional:</p><p>Jl. Sempur No. 5, Bogor Tengah, Kota Bogor</p><p>Jawa Barat 16129, Indonesia</p></div><div class="flex items-center gap-3 pt-2"><span class="px-2.5 py-1 bg-surface-container-high text-forest-dark font-label-sm text-label-sm rounded">NGOsource Equivalency Certified</span><span class="px-2.5 py-1 bg-surface-container-high text-forest-dark font-label-sm text-label-sm rounded">SAM.gov UEID: MUC1QNJ3S7X</span></div></div><div class="lg:col-span-2 flex flex-col gap-3"><h4 class="font-title-md text-title-md text-forest-dark">Isu &amp; Program</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="program-kami" href="./program_kami_kaoem_telapak.html">Forest &amp; Land Governance</a></li><li><a class="hover:text-primary transition-colors" data-path="program-kami" href="./program_kami_kaoem_telapak.html">Sustainable Livelihood</a></li><li><a class="hover:text-primary transition-colors" data-path="program-kami" href="./program_kami_kaoem_telapak.html">Youth Corner &amp; Regenerasi</a></li><li><a class="hover:text-primary transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html">Atlas Dampak Nusantara</a></li><li><a class="hover:text-primary transition-colors" data-path="analitik-dampak-spasial" href="./analitik_dampak_spasial.html">Metrik Capaian Lapangan</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-3"><h4 class="font-title-md text-title-md text-forest-dark">Kelembagaan</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="tentang-kami" href="./tentang_kami_kaoem_telapak.html">Visi, Misi &amp; Sejarah</a></li><li><a class="hover:text-primary transition-colors" data-path="struktur-organisasi" href="./struktur_organisasi_kaoem_telapak.html">Dewan &amp; Badan Pengurus</a></li><li><a class="hover:text-primary transition-colors" data-path="safeguard-policy" href="./safeguard-policy.html">Kebijakan Perlindungan Sosial</a></li><li><a class="hover:text-primary transition-colors" data-path="peta-sebaran-anggota" href="./peta_sebaran_anggota.html">Jaringan Keanggotaan</a></li><li><a class="hover:text-primary transition-colors" data-path="kontak-dan-kolaborasi" href="./kontak-dan-kolaborasi.html">Peluang Kerjasama</a></li></ul></div><div class="lg:col-span-4 flex flex-col gap-4"><h4 class="font-title-md text-title-md text-forest-dark">Warta Rimba &amp; Publikasi</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Dapatkan buletin investigasi lapangan, laporan pemantauan deforestasi independen, dan cerita kedaulatan warga berkala.</p><form class="flex flex-col sm:flex-row gap-2"><input class="flex-1 px-4 py-2.5 rounded bg-surface-pure text-on-surface placeholder:text-moss-muted font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" placeholder="Alamat surel Anda..." type="email"><button class="px-5 py-2.5 bg-primary text-on-primary hover:bg-forest-dark font-label-md text-label-md rounded shadow-sm transition-colors" type="submit">Langganan</button></form><div class="flex items-center gap-4 text-on-surface-variant pt-2"><a class="p-2 rounded bg-surface-container hover:text-primary transition-colors" data-path="publikasi-dan-cerita" href="./publikasi-dan-cerita.html" title="Dokumen Publik"><span class="material-symbols-outlined text-xl">description</span></a><a class="p-2 rounded bg-surface-container hover:text-primary transition-colors" data-path="atlas-dampak-nusantara" href="./atlas_dampak_nusantara.html" title="Peta Geospasial"><span class="material-symbols-outlined text-xl">map</span></a><a class="p-2 rounded bg-surface-container hover:text-primary transition-colors" data-path="analitik-dampak-spasial" href="./analitik_dampak_spasial.html" title="Analitik Spasial"><span class="material-symbols-outlined text-xl">query_stats</span></a><a class="p-2 rounded bg-surface-container hover:text-primary transition-colors" href="mailto:kaoem@kaoemtelapak.org" title="Email Sekretariat"><span class="material-symbols-outlined text-xl">mail</span></a></div></div></div><div class="mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-on-surface-variant"><p>© 2025 Perkumpulan Kaoem Telapak. Hak cipta dilindungi undang-undang.</p><div class="flex items-center gap-6"><a class="hover:text-primary transition-colors" data-path="safeguard-policy" href="./safeguard-policy.html">Kebijakan Pengamanan (Safeguard)</a><a class="hover:text-primary transition-colors" data-path="kontak-dan-kolaborasi" href="./kontak-dan-kolaborasi.html">Kanal Whistleblowing</a><a class="hover:text-primary transition-colors" href="./dashboard_anggaran_pagu_proyek_kaoem_telapak.html">Transparansi Finansial</a></div></div></div></footer></body></html>

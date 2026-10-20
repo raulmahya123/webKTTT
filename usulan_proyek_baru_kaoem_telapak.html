@@ -1,0 +1,507 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed":"#2d1600","tertiary-container":"#643b10","on-primary-fixed":"#002116","primary-container":"#184d3b","on-surface-variant":"#404944","tertiary":"#492600","on-secondary-container":"#546853","surface-container":"#e4f1e7","surface-container-low":"#eaf7ed","sand-border":"#E3E0D5","surface-tint":"#356854","on-tertiary-fixed-variant":"#673d12","background":"#f0fdf3","inverse-on-surface":"#e7f4ea","primary-fixed":"#b8eed5","on-tertiary":"#ffffff","error":"#ba1a1a","surface":"#f0fdf3","primary-fixed-dim":"#9cd2ba","secondary-fixed":"#d3e8cf","surface-container-highest":"#d9e6dc","tertiary-fixed":"#ffdcc0","on-surface":"#131e18","surface-container-lowest":"#ffffff","inverse-surface":"#28332d","surface-cream":"#F8F7F2","inverse-primary":"#9cd2ba","outline":"#707974","secondary-fixed-dim":"#b7ccb4","on-secondary-fixed-variant":"#394b38","outline-variant":"#c0c9c2","on-error-container":"#93000a","secondary":"#50634f","on-primary-container":"#88bda6","error-container":"#ffdad6","surface-dim":"#d0ddd4","on-primary":"#ffffff","on-secondary-fixed":"#0e1f10","surface-container-high":"#dfebe2","on-tertiary-container":"#e1a672","on-background":"#131e18","surface-pure":"#FFFFFF","tertiary-fixed-dim":"#f7ba84","secondary-container":"#d0e6cc","surface-variant":"#d9e6dc","moss-muted":"#6E8771","earth-ochre":"#C28B59","on-error":"#ffffff","charcoal-ink":"#202B25","on-primary-fixed-variant":"#1b4f3d","forest-dark":"#0F3226","surface-bright":"#f0fdf3","on-secondary":"#ffffff","primary":"#003626"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin-desktop":"4.5rem","margin":"1.25rem","space-xl":"3rem","space-xs":"0.25rem","gutter-desktop":"2.5rem","margin-tablet":"2.5rem","space-md":"1rem","gutter":"1.5rem","space-lg":"1.75rem","space-sm":"0.5rem"},fontFamily:{"display-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"label-md":["Inter"],"body-md":["Inter"],"label-sm":["Inter"]},fontSize:{"display-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["22px",{"lineHeight":"30px","letterSpacing":"0em","fontWeight":"600"}],"display":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}]}}}}</script><link rel="stylesheet" href="./assets/site.css"><script defer="" src="./assets/site.js"></script><link rel="stylesheet" href="./assets/cms-shell.css"><script defer src="./assets/cms-shell.js"></script></head><body class="kt-cms bg-surface-cream font-body-md text-on-surface antialiased" data-cms-role="admin"><aside class="cms-sidebar"><a class="cms-brand" href="./portal-admin.html"><img src="./assets/kaoem-telapak-logo.png" alt="Kaoem Telapak"></a><nav id="cms-nav" aria-label="Navigasi CMS"></nav><div class="cms-exit"><a class="cms-link" href="./index.html">Lihat website ↗</a><a class="cms-link" id="cms-logout" href="./masuk_pemulihan_akun_kaoem_telapak.html">Keluar</a></div></aside><header class="cms-topbar"><button type="button" class="cms-toggle" id="cms-menu-toggle" aria-expanded="false" aria-controls="cms-nav">☰ Menu</button><strong>Ruang Kelola Kaoem Telapak</strong><span id="cms-role">CMS · DEMO</span></header><main class="cms-main"><div class="flex flex-col w-full">
+<!-- Top Progress Indicator / Stepper Bar (7 Steps) -->
+<div class="w-full bg-surface-pure rounded-lg p-space-md shadow-sm mb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-moss-muted tracking-widest uppercase">Formulir Proposal Lapangan</span>
+<span class="text-moss-muted text-label-sm font-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-forest-dark font-semibold">Fase Perancangan Tapak v4.2</span>
+</div>
+<div class="flex items-center gap-space-xs text-moss-muted text-label-sm font-label-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-surface-tint"></span>
+<span>Penyimpanan otomatis aktif • 14:32 WIT</span>
+</div>
+</div>
+<!-- Stepper Grid -->
+<div class="grid grid-cols-7 gap-space-xs relative">
+<!-- Step 1: Completed -->
+<div class="flex flex-col gap-1.5 group cursor-pointer">
+<div class="h-1.5 w-full bg-primary-container rounded-full transition-all"></div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] leading-none" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+<span class="font-label-sm text-label-sm font-semibold text-charcoal-ink truncate">1. Identitas</span>
+</div>
+</div>
+<!-- Step 2: Active -->
+<div class="flex flex-col gap-1.5">
+<div class="h-1.5 w-full bg-earth-ochre rounded-full"></div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-5 h-5 rounded-full bg-earth-ochre text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm">
+            2
+          </span>
+<span class="font-label-sm text-label-sm font-bold text-forest-dark truncate">2. Cakupan Geografis</span>
+</div>
+</div>
+<!-- Step 3: Pending -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full bg-surface-container-high rounded-full"></div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">3. Penerima Manfaat</span>
+</div>
+</div>
+<!-- Step 4: Pending -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full bg-surface-container-high rounded-full"></div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">4. Workplan</span>
+</div>
+</div>
+<!-- Step 5: Pending -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full bg-surface-container-high rounded-full"></div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">5. Anggaran</span>
+</div>
+</div>
+<!-- Step 6: Pending -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full bg-surface-container-high rounded-full"></div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">6. Dokumen</span>
+</div>
+</div>
+<!-- Step 7: Pending -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full bg-surface-container-high rounded-full"></div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="w-5 h-5 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-sm text-label-sm">7</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">7. Review &amp; Kirim</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Collapsible Step 1 Summary Banner -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-md shadow-sm mb-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-semibold">
+            #PRJ-PROP-2026-019
+          </span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-semibold">
+            Forest &amp; Land Governance
+          </span>
+<span class="font-label-sm text-label-sm text-moss-muted">
+            • Durasi: 24 Bulan (01 Jan 2027 – 31 Des 2028)
+          </span>
+</div>
+<h2 class="font-title-md text-title-md font-bold text-forest-dark mt-1">
+          Penguatan Kedaulatan Wilayah Adat &amp; Patroli Hutan Rimba Saunulu
+        </h2>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center flex-shrink-0">
+<button class="flex items-center gap-1 text-label-md font-label-md text-primary-container hover:text-forest-dark transition-colors px-2 py-1 rounded" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+<span>Ubah Identitas</span>
+</button>
+<span class="text-sand-border">|</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Tahap 1 Terverifikasi</span>
+</div>
+</div>
+<!-- Step 2 Title & Editorial Intro -->
+<div class="mb-space-lg">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-earth-ochre font-bold">Langkah 02 / 07</span>
+<span class="text-moss-muted text-xs">•</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Verifikasi Spasial &amp; Batas Wilayah Hukum Adat</span>
+</div>
+<h1 class="font-headline-md text-headline-md font-bold text-charcoal-ink">
+      Cakupan Geografis &amp; Delineasi Spasial Tapak
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mt-1">
+      Petakan batas bentang alam, kelola simpul pembanding wilayah replikasi, dan lampirkan data spasial terstandar (EPSG:4326). Validasi tumpang tindih kawasan secara langsung sebelum proposal diajukan ke dewan penilai.
+    </p>
+</div>
+<!-- Main Split Grid: Left Form Controls (7 Cols) / Right GIS Engine & Preview (5 Cols) -->
+<div class="grid grid-cols-12 gap-space-lg mb-space-xl">
+<!-- LEFT PANEL: Administrative Hierarchy & File Upload (7 Cols) -->
+<div class="col-span-12 xl:col-span-7 flex flex-col gap-space-lg">
+<!-- PART A: Wilayah Administratif & Tapak -->
+<section class="bg-surface-pure rounded-lg p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md bg-surface-cream -mx-space-lg -mt-space-lg p-space-lg rounded-t-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-forest-dark">location_on</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink leading-tight">
+                Bagian A: Hierarki Administratif &amp; Entitas Komunitas
+              </h3>
+<p class="font-body-sm text-body-sm text-moss-muted">Tetapkan titik sentral tapak dan status hukum wilayah adat binaan.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-primary-container px-2.5 py-1 rounded-full font-semibold">
+            2 Lokasi Terdata
+          </span>
+</div>
+<!-- Multi-Lokasi Toggle -->
+<label class="flex items-start gap-space-sm p-space-sm rounded bg-surface-container-low cursor-pointer mb-space-lg hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer" type="checkbox">
+<div class="flex flex-col">
+<span class="font-title-md text-body-sm font-semibold text-charcoal-ink">
+              Proyek Multi-Lokasi (Intervensi lintas provinsi / bentang alam)
+            </span>
+<span class="font-body-sm text-body-sm text-moss-muted">
+              Centang jika program memiliki tapak replikasi, stasiun patroli satelit, atau koridor konservasi lintas batas adat.
+            </span>
+</div>
+</label>
+<!-- Lokasi Prioritas #1 (Saunulu) -->
+<div class="bg-surface-cream rounded-lg p-space-md mb-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-forest-dark"></span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-forest-dark">
+                Lokasi Prioritas #1 (Tapak Utama Saunulu)
+              </span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-container text-on-primary-container px-2 py-0.5 rounded font-semibold">
+              Kawasan Inti
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-moss-muted font-semibold block mb-1">PROVINSI</label>
+<div class="bg-surface-pure text-charcoal-ink font-body-sm text-body-sm px-space-sm py-2 rounded shadow-sm flex items-center justify-between">
+<span>Maluku</span>
+<span class="material-symbols-outlined text-moss-muted text-base">expand_more</span>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-moss-muted font-semibold block mb-1">KABUPATEN / KOTA</label>
+<div class="bg-surface-pure text-charcoal-ink font-body-sm text-body-sm px-space-sm py-2 rounded shadow-sm flex items-center justify-between">
+<span>Maluku Tengah</span>
+<span class="material-symbols-outlined text-moss-muted text-base">expand_more</span>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-moss-muted font-semibold block mb-1">KECAMATAN TERDAMPAK</label>
+<div class="bg-surface-pure text-charcoal-ink font-body-sm text-body-sm px-space-sm py-2 rounded shadow-sm">
+                Kec. Tehoru &amp; Kec. Amahai
+              </div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-moss-muted font-semibold block mb-1">DESA / NEGERI ADAT</label>
+<div class="bg-surface-pure text-charcoal-ink font-body-sm text-body-sm px-space-sm py-2 rounded shadow-sm">
+                Negeri Saunulu &amp; Negeri Tehua
+              </div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm">
+<label class="font-label-sm text-label-sm text-moss-muted font-semibold block mb-1">
+              STATUS &amp; TIPOLOGI WILAYAH
+            </label>
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm bg-surface-pure text-forest-dark px-2.5 py-1 rounded font-semibold shadow-sm">
+                Wilayah Adat &amp; Hutan Adat Teridentifikasi (MHA)
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-pure text-moss-muted px-2.5 py-1 rounded shadow-sm">
+                Petuanan Negeri Saunulu
+              </span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold">
+                Perda Pengakuan No. 04/2021
+              </span>
+</div>
+</div>
+</div>
+<!-- Lokasi Pembanding #2 (Boven Digoel) -->
+<div class="bg-surface-cream rounded-lg p-space-md mb-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-earth-ochre"></span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-earth-ochre">
+                Lokasi Pembanding #2 (Simpul Replikasi Pembelajaran)
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded font-semibold">
+                Replikasi
+              </span>
+<button class="text-moss-muted hover:text-error p-0.5" type="button">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-moss-muted font-semibold block mb-1">PROVINSI</label>
+<div class="bg-surface-pure text-charcoal-ink font-body-sm text-body-sm px-space-sm py-2 rounded shadow-sm flex items-center justify-between">
+<span>Papua Selatan</span>
+<span class="material-symbols-outlined text-moss-muted text-base">expand_more</span>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-moss-muted font-semibold block mb-1">KABUPATEN</label>
+<div class="bg-surface-pure text-charcoal-ink font-body-sm text-body-sm px-space-sm py-2 rounded shadow-sm flex items-center justify-between">
+<span>Boven Digoel</span>
+<span class="material-symbols-outlined text-moss-muted text-base">expand_more</span>
+</div>
+</div>
+<div class="md:col-span-2">
+<label class="font-label-sm text-label-sm text-moss-muted font-semibold block mb-1">ENTITAS MASYARAKAT ADAT</label>
+<div class="bg-surface-pure text-charcoal-ink font-body-sm text-body-sm px-space-sm py-2 rounded shadow-sm flex items-center justify-between">
+<span>Marga Wambon &amp; Mandobo (Sub-DAS Digoel Hilir)</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Sentroid: -6°05'12" S, 140°18'22" E</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Add Location Button -->
+<button class="w-full py-2.5 px-space-md rounded bg-surface-container-low text-primary-container hover:bg-surface-container transition-colors flex items-center justify-center gap-space-xs font-title-md text-body-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-lg leading-none">add_location_alt</span>
+<span>+ Tambah Lokasi Tapak Baru</span>
+</button>
+</section>
+<!-- PART B: Delineasi Spasial & Upload Vektor Poligon -->
+<section class="bg-surface-pure rounded-lg p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md bg-surface-cream -mx-space-lg -mt-space-lg p-space-lg rounded-t-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-forest-dark">layers</span>
+<div>
+<h3 class="font-title-md text-title-md font-bold text-charcoal-ink leading-tight">
+                Bagian B: Delineasi Vektor &amp; Berkas Spasial
+              </h3>
+<p class="font-body-sm text-body-sm text-moss-muted">Sertakan berkas batas kawasan untuk kalkulasi tutupan kanopi dan audit tumpang tindih.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-forest-dark px-2.5 py-1 rounded-full font-semibold">
+            Standar WGS 84
+          </span>
+</div>
+<!-- Drag & Drop Zone -->
+<div class="bg-surface-cream rounded-lg p-space-lg text-center flex flex-col items-center justify-center mb-space-md hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-surface-pure text-forest-dark flex items-center justify-center mb-space-sm group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-2xl">cloud_upload</span>
+</div>
+<p class="font-title-md text-body-sm font-bold text-charcoal-ink mb-1">
+            Tarik &amp; Jatuhkan berkas GeoJSON, Shapefile (.zip), atau KML/KMZ
+          </p>
+<p class="font-body-sm text-body-sm text-moss-muted max-w-md mb-space-sm">
+            Format wajib memuat metadata atribut nama marga, status zonasi, dan luas tapak. Ukuran berkas maksimal 25 MB.
+          </p>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-forest-dark transition-colors" type="button">
+              Pilih Berkas dari Komputer
+            </button>
+<button class="px-space-md py-1.5 rounded bg-surface-pure text-charcoal-ink font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors" type="button">
+              Ambil dari GIS Server KT
+            </button>
+</div>
+</div>
+<!-- Uploaded File State Card -->
+<div class="bg-surface-cream rounded-lg p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded bg-forest-dark text-on-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-xl">map</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-md text-body-sm font-bold text-charcoal-ink truncate">
+                    Delineasi_Hutan_Adat_Saunulu_v2.geojson
+                  </span>
+<span class="material-symbols-outlined text-surface-tint text-base" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="font-label-sm text-label-sm text-moss-muted mt-0.5 flex items-center gap-2 flex-wrap">
+<span>Ukuran: 4.8 MB</span>
+<span>•</span>
+<span class="font-semibold text-forest-dark">Luas: 120.450 Hektare</span>
+<span>•</span>
+<span>Sentroid: 3°12'44" S, 129°28'11" E</span>
+<span>•</span>
+<span>Proyeksi: EPSG:4326</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="text-moss-muted hover:text-charcoal-ink p-1 rounded" title="Unduh Ulang" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+<button class="text-moss-muted hover:text-error p-1 rounded" title="Hapus Berkas" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+<!-- Safeguard Automated Validation Notice -->
+<div class="mt-space-md pt-space-sm bg-surface-pure rounded p-space-sm shadow-sm flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-lg flex-shrink-0 mt-0.5">security_update_good</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-forest-dark">
+                Uji Tumpang Tindih Terverifikasi (Kaoem Telapak Spatial Safeguard Engine)
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Lolos uji tumpang tindih kawasan konservasi negara (Batas TN Manusela: Buffer 1.4 km) &amp; <span class="font-semibold text-forest-dark">nihil konsesi izin HGU sawit/tambang aktif</span>. Siap untuk proses penetapan sub-petak patroli komunitas.
+              </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT PANEL: Interactive Mini-GIS Preview & Spatial Metrics (5 Cols) -->
+<div class="col-span-12 xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Interactive Map Card -->
+<section class="bg-surface-pure rounded-lg p-space-md shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-forest-dark text-lg">travel_explore</span>
+<span class="font-title-md text-body-sm font-bold text-charcoal-ink">Pratinjau Geospasial Terintegrasi</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-forest-dark"></span>
+<span class="font-label-sm text-label-sm text-moss-muted uppercase tracking-wider">Live GIS Canvas</span>
+</div>
+</div>
+<!-- Mini-GIS Container with Layer Overlay and Legend -->
+<div class="relative w-full h-[400px] rounded-lg overflow-hidden shadow-inner bg-charcoal-ink">
+<!-- Static GIS Map Placeholder Canvas -->
+<div class="w-full h-full bg-cover bg-center" data-location="Saunulu, Tehoru, Central Maluku Regency, Maluku, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4R_fP5zwcrYBevUF5Zb4nSEOLPTiCqjViU5pVuTXJwLOLHn5K_P7s3WV5bNZcgiwfokbxgFRUklW2EcEW927YBkbLC4gUM0vLR5HICEIc9_h6mx6SII84ap43c7PBXvWpfbrxk9Fo25LPjsYRWOsWb9goPx7XcZXtg9NeZgRdB3GNnTEbMNLBL73YMhFolhN4S3_sOZiFfPPcnfSH0zacUH4mkoSibNTdhIDA1pPlU8QiIanTeNNO')"></div>
+<!-- Gradient Scrim for Header Contrast -->
+<div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-forest-dark/80 to-transparent pointer-events-none"></div>
+<!-- Map Coordinates Badge (Top Left) -->
+<div class="absolute top-space-sm left-space-sm bg-surface-pure/90 backdrop-blur-sm px-2.5 py-1 rounded shadow-sm flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold text-forest-dark">TAPAK SAUNULU: 03°12'S 129°28'E</span>
+<span class="text-xs text-moss-muted font-mono">Zoom: 1:25.000</span>
+</div>
+<!-- Layer Toggles (Top Right) -->
+<div class="absolute top-space-sm right-space-sm bg-surface-pure/95 backdrop-blur-md rounded shadow-sm p-1.5 flex flex-col gap-1 text-label-sm font-label-sm">
+<button class="px-2 py-1 rounded bg-surface-container text-primary-container font-semibold flex items-center justify-between gap-2">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span>Poligon Hutan Adat</span>
+</span>
+<span class="material-symbols-outlined text-xs">visibility</span>
+</button>
+<button class="px-2 py-1 rounded bg-surface-pure hover:bg-surface-cream text-charcoal-ink flex items-center justify-between gap-2">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-earth-ochre"></span>
+<span>Batas TN Manusela</span>
+</span>
+<span class="material-symbols-outlined text-xs">visibility</span>
+</button>
+<button class="px-2 py-1 rounded bg-surface-pure hover:bg-surface-cream text-charcoal-ink flex items-center justify-between gap-2">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-moss-muted"></span>
+<span>Kanopi Sentinel-2</span>
+</span>
+<span class="material-symbols-outlined text-xs">visibility_off</span>
+</button>
+</div>
+<!-- SVG Vector Boundary Illustration (Overlaid on Map) -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" viewBox="0 0 500 400">
+<!-- Saunulu Custom Delineation Polygon -->
+<polygon fill="rgba(24, 77, 59, 0.28)" points="120,80 340,95 420,210 390,320 230,360 90,270 70,160" stroke="#184D3B" stroke-dasharray="4 2" stroke-width="2.5"></polygon>
+<!-- Manusela Conservation Boundary Edge -->
+<path d="M420,70 L340,95 L420,210 L460,260" stroke="#C28B59" stroke-linecap="round" stroke-width="2"></path>
+<!-- Centroid Pin -->
+<circle cx="240" cy="210" fill="#C28B59" r="5" stroke="#FFFFFF" stroke-width="1.5"></circle>
+<!-- Waypoint 1 -->
+<circle cx="120" cy="80" fill="#184D3B" r="3.5" stroke="#FFFFFF" stroke-width="1"></circle>
+<!-- Waypoint 2 -->
+<circle cx="390" cy="320" fill="#184D3B" r="3.5" stroke="#FFFFFF" stroke-width="1"></circle>
+</svg>
+<!-- Interactive Bottom Control Bar -->
+<div class="absolute bottom-space-sm inset-x-space-sm bg-surface-pure/95 backdrop-blur-md rounded p-space-sm shadow-sm flex items-center justify-between text-charcoal-ink">
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 bg-primary-container rounded-sm"></span>
+<span class="font-label-sm text-label-sm font-semibold">120.450 Ha Tapak</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 bg-earth-ochre rounded-sm"></span>
+<span class="font-label-sm text-label-sm text-moss-muted">Penyangga TN</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-cream text-charcoal-ink" title="Zoom In" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-cream text-charcoal-ink" title="Zoom Out" type="button">
+<span class="material-symbols-outlined text-base">remove</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-cream text-charcoal-ink" title="Layar Penuh" type="button">
+<span class="material-symbols-outlined text-base">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Landscape Ecological Breakdown Data Card -->
+<div class="grid grid-cols-3 gap-space-xs mt-space-md">
+<div class="bg-surface-cream rounded p-space-sm text-left">
+<span class="font-label-sm text-label-sm text-moss-muted uppercase font-semibold">Kerapatan Kanopi</span>
+<div class="font-title-md text-title-md font-bold text-forest-dark mt-0.5">88.4%</div>
+<span class="font-label-sm text-label-sm text-surface-tint">Primer Dataran Tinggi</span>
+</div>
+<div class="bg-surface-cream rounded p-space-sm text-left">
+<span class="font-label-sm text-label-sm text-moss-muted uppercase font-semibold">Estimasi Karbon</span>
+<div class="font-title-md text-title-md font-bold text-charcoal-ink mt-0.5">14.2 Mt</div>
+<span class="font-label-sm text-label-sm text-moss-muted">CO2e Tersimpan</span>
+</div>
+<div class="bg-surface-cream rounded p-space-sm text-left">
+<span class="font-label-sm text-label-sm text-moss-muted uppercase font-semibold">Kerapatan Sungai</span>
+<div class="font-title-md text-title-md font-bold text-charcoal-ink mt-0.5">18 Jalur</div>
+<span class="font-label-sm text-label-sm text-earth-ochre">Hulu DAS Tehoru</span>
+</div>
+</div>
+<!-- Atlas Dampak Nusantara Authorization Notice -->
+<div class="mt-space-md p-space-sm rounded bg-surface-container-low flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base flex-shrink-0 mt-0.5">public</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-charcoal-ink">
+              Otorisasi Atlas Dampak Nusantara
+            </span>
+<p class="font-label-sm text-label-sm text-moss-muted leading-tight mt-0.5">
+              Setelah usulan proyek ini disetujui oleh Direktur Eksekutif, poligon batas adat dan titik stasiun patroli akan otomatis disinkronkan ke geodatabase publik Kaoem Telapak untuk pemantauan deforestasi satelit real-time.
+            </p>
+</div>
+</div>
+</section>
+<!-- Field Photo Verification Placeholder -->
+<div class="bg-surface-pure rounded-lg p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-title-md text-body-sm font-bold text-charcoal-ink">Dokumentasi Tanda Batas Alam Lapangan</span>
+<span class="font-label-sm text-label-sm text-forest-dark font-semibold">3 Foto Terunggah</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<div class="h-20 rounded overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Indigenous Moluccan community elders in Saunulu installing a wooden boundary pillar marker at the edge of the rainforest, surrounded by lush green foliage and mountain mist in Seram Island." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKMWPCnyviWRQdEMJBwVmx48IzEquttTJGJyd66jgVWwRjKW8Nywl32f531OeM51uHxyxA4cy_rfU7DEGfE_Tl-ORPI0c7DmhpS7WHA3Lw-RCV4F29Gc6HK6Qdyr2VS33rM-istIix12jmgHNNovk7sNfqtxMRMjRb84uGGA3JqzCI4JG4pae8fvnCqA2vihftPmBwe5idYhUZWLYIB4DZmepZ6Z7Vyoy9_fmQcN3FHIp5sB5fM0JL">
+</div>
+<div class="h-20 rounded overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Drone aerial view of virgin tropical rainforest canopy with winding river in Tehoru Central Maluku, showing untouched primary biodiversity corridor under morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnGWjbBe9bESPPzINakKRAFAe3FwJhaJFu0lJcDAW4LjOkylQ7B1wN3DgJMF9Qe6bJ6SC1cELjq2osfi0xMWbTY5Ve60HFzZn6l0fRmoxtS50cVDWJ1nRq4jgcPtFoZJAkxPNuMib2G5FpDZza8c-NeZyX3Lh2tYQ79owhnRLiOp-fQDZVM-un0y9vFUbEL0FYJUpn-O2GuVoQYXJDWykr7qWJMWyxIQdFRsY-x6AIfof2JjopeD4Q">
+</div>
+<div class="h-20 rounded overflow-hidden relative bg-surface-cream flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-moss-muted text-xl">add_a_photo</span>
+<span class="font-label-sm text-label-sm text-moss-muted font-semibold mt-1">+ Tambah</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation & Action Footer Bar -->
+<div class="w-full bg-surface-pure rounded-lg p-space-md shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md sticky bottom-4 z-30">
+<!-- Back Button -->
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded bg-surface-cream hover:bg-surface-container-high text-charcoal-ink font-title-md text-body-sm font-semibold transition-colors" data-path="usulan-proyek" href="./usulan_proyek_baru_kaoem_telapak.html">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+<span>Kembali ke Langkah 1: Identitas Proyek</span>
+</a>
+<!-- Action Group (Save Draft & Next) -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded bg-surface-cream text-forest-dark hover:bg-surface-container transition-colors font-title-md text-body-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-base">save</span>
+<span>Simpan Draf Usulan</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-lg py-2.5 rounded bg-forest-dark hover:bg-primary-container text-on-primary font-title-md text-body-sm font-bold shadow transition-all transform active:scale-95" type="button">
+<span>Lanjutkan ke Langkah 3: Penerima Manfaat</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</div>
+</div>
+</div></main><footer class="cms-footer">Kaoem Telapak · CMS demo lokal</footer></body></html>

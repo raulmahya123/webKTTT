@@ -1,0 +1,840 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#93000a","secondary-fixed":"#d3e8cf","tertiary":"#492600","surface-container-lowest":"#ffffff","tertiary-fixed-dim":"#f7ba84","surface-cream":"#F8F7F2","inverse-surface":"#28332d","earth-ochre":"#C28B59","primary":"#003626","surface-variant":"#d9e6dc","on-surface-variant":"#404944","surface-container-highest":"#d9e6dc","surface-bright":"#f0fdf3","moss-muted":"#6E8771","on-surface":"#131e18","primary-container":"#184d3b","on-tertiary-fixed-variant":"#673d12","sand-border":"#E3E0D5","secondary-container":"#d0e6cc","surface-tint":"#356854","on-secondary-fixed-variant":"#394b38","surface-pure":"#FFFFFF","tertiary-container":"#643b10","on-secondary-container":"#546853","primary-fixed-dim":"#9cd2ba","on-primary-fixed":"#002116","on-secondary-fixed":"#0e1f10","on-primary-container":"#88bda6","error":"#ba1a1a","on-secondary":"#ffffff","background":"#f0fdf3","on-error":"#ffffff","on-background":"#131e18","on-tertiary-container":"#e1a672","inverse-on-surface":"#e7f4ea","on-tertiary":"#ffffff","secondary":"#50634f","surface-container-low":"#eaf7ed","forest-dark":"#0F3226","surface-container-high":"#dfebe2","secondary-fixed-dim":"#b7ccb4","charcoal-ink":"#202B25","primary-fixed":"#b8eed5","surface":"#f0fdf3","error-container":"#ffdad6","surface-container":"#e4f1e7","surface-dim":"#d0ddd4","outline-variant":"#c0c9c2","inverse-primary":"#9cd2ba","tertiary-fixed":"#ffdcc0","outline":"#707974","on-primary":"#ffffff","on-tertiary-fixed":"#2d1600","on-primary-fixed-variant":"#1b4f3d"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xl":"3rem","space-sm":"0.5rem","space-md":"1rem","gutter-desktop":"2.5rem",gutter:"1.5rem",margin:"1.25rem","space-lg":"1.75rem","margin-desktop":"4.5rem","margin-tablet":"2.5rem","space-xs":"0.25rem"},fontFamily:{"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],display:["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-md":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-sm":["22px",{lineHeight:"30px",letterSpacing:"0em",fontWeight:"600"}],"title-md":["18px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"30px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.06em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],"display-mobile":["38px",{lineHeight:"46px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-md":["13px",{lineHeight:"18px",letterSpacing:"0.04em",fontWeight:"600"}],display:["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script><link rel="stylesheet" href="./assets/site.css"><script defer="" src="./assets/site.js"></script><link rel="stylesheet" href="./assets/cms-shell.css"><script defer src="./assets/cms-shell.js"></script></head><body class="kt-cms bg-surface font-body-md text-on-surface antialiased" data-cms-role="admin"><aside class="cms-sidebar"><a class="cms-brand" href="./portal-admin.html"><img src="./assets/kaoem-telapak-logo.png" alt="Kaoem Telapak"></a><nav id="cms-nav" aria-label="Navigasi CMS"></nav><div class="cms-exit"><a class="cms-link" href="./index.html">Lihat website ↗</a><a class="cms-link" id="cms-logout" href="./masuk_pemulihan_akun_kaoem_telapak.html">Keluar</a></div></aside><header class="cms-topbar"><button type="button" class="cms-toggle" id="cms-menu-toggle" aria-expanded="false" aria-controls="cms-nav">☰ Menu</button><strong>Ruang Kelola Kaoem Telapak</strong><span id="cms-role">CMS · DEMO</span></header><main class="cms-main"><div class="flex flex-col w-full">
+<div class="px-gutter py-space-lg space-y-space-lg max-w-[1400px] mx-auto w-full">
+<!-- Top Administrative Protocol Callout -->
+<div class="relative overflow-hidden rounded-xl bg-forest-dark text-surface-pure shadow-md p-space-md">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 rounded-full bg-primary-container/40 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-earth-ochre text-surface-pure flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-fixed-dim font-bold">Konsol Administrator Keanggotaan</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm text-surface-variant font-medium">Protokol Verifikasi RUA 2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-pure font-medium">
+              Mode Verifikator Aktif: <span class="text-tertiary-fixed-dim font-semibold">4 Berkas Calon Kader</span> membutuhkan audit safeguard wilayah, serta <span class="text-tertiary-fixed-dim font-semibold">1 permohonan pembaharuan hak suara adat</span> menunggu telaah majelis.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full lg:w-auto flex-shrink-0">
+<button class="flex-1 lg:flex-initial inline-flex items-center justify-center gap-1.5 px-space-md py-2 bg-earth-ochre hover:bg-tertiary-container text-surface-pure rounded-lg font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Reviu Pengajuan Baru (4)</span>
+</button>
+<button class="flex-1 lg:flex-initial inline-flex items-center justify-center gap-1.5 px-space-md py-2 bg-primary-container hover:bg-primary text-surface-pure rounded-lg font-label-md text-label-md transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Ekspor Direktori</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Editorial Header Block -->
+<header class="relative space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[14px]">public</span> Jaringan Wilayah Kelola Rakyat
+        </span>
+<span class="font-label-sm text-label-sm text-moss-muted">Pembaruan Registri: 04 April 2026</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-3xl space-y-1">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Direktori Anggota &amp; Jaringan Komunitas Nusantara
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Jejaring kolaboratif 850+ kader masyarakat adat, peneliti, investigator mandiri, dan paralegal di seluruh kepulauan Indonesia untuk kedaulatan hutan dan ruang hidup komunal.
+          </p>
+</div>
+<div class="flex items-center gap-2 self-start lg:self-end">
+<span class="material-symbols-outlined text-earth-ochre text-[24px]">gavel</span>
+<span class="font-label-sm text-label-sm text-moss-muted max-w-[210px] leading-tight">
+            Sesuai Pakta Integritas Perlindungan Data Adat &amp; Consent Safeguard Telapak.
+          </span>
+</div>
+</div>
+</header>
+<!-- Network Analytics Strip (Editorial Metric Cards) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Total Anggota -->
+<div class="bg-surface-pure p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Total Anggota Terdaftar</span>
+<span class="p-2 rounded-lg bg-surface-container text-primary material-symbols-outlined text-[20px]">groups</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-forest-dark font-extrabold">850+</span>
+<span class="font-label-sm text-label-sm text-moss-muted">kader aktif</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="text-primary font-semibold">712 Publik Terverifikasi</span>
+<span class="text-moss-muted">•</span>
+<span class="text-earth-ochre font-semibold">138 Anonim/Sensitif</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-space-sm overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 84%"></div>
+<div class="bg-earth-ochre h-full" style="width: 16%"></div>
+</div>
+</div>
+<!-- Metric 2: Provinsi Aktif -->
+<div class="bg-surface-pure p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Cakupan Teritorial</span>
+<span class="p-2 rounded-lg bg-surface-container text-primary material-symbols-outlined text-[20px]">map</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-forest-dark font-extrabold">24</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Provinsi Adat</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">
+            Dari pesisir Leuser hingga Pegunungan Bintang Papua
+          </p>
+</div>
+<div class="flex items-center gap-1.5 mt-space-sm pt-space-xs text-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">travel_explore</span>
+<span>100% Wilayah Kritis Terpantau</span>
+</div>
+</div>
+<!-- Metric 3: Keahlian Utama -->
+<div class="bg-surface-pure p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Distribusi Keahlian</span>
+<span class="p-2 rounded-lg bg-surface-container text-primary material-symbols-outlined text-[20px]">military_tech</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Investigasi &amp; GTID</span>
+<span class="text-primary font-bold">32%</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Paralegal Tapak</span>
+<span class="text-earth-ochre font-bold">24%</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">Ekonomi Komunal</span>
+<span class="text-moss-muted font-bold">22%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-space-sm overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 32%"></div>
+<div class="bg-earth-ochre h-full" style="width: 24%"></div>
+<div class="bg-secondary h-full" style="width: 22%"></div>
+<div class="bg-sand-border h-full" style="width: 22%"></div>
+</div>
+</div>
+<!-- Metric 4: Status Simpul Komunitas -->
+<div class="bg-surface-pure p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Simpul Tapak Terpadu</span>
+<span class="p-2 rounded-lg bg-surface-container text-primary material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-forest-dark font-extrabold">18</span>
+<span class="font-label-sm text-label-sm text-moss-muted">Hub Berjalan</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+            Pusat radio logistik, posko hukum, dan unit reaksi cepat
+          </p>
+</div>
+<div class="flex items-center gap-2 mt-space-sm pt-space-xs font-label-sm text-label-sm text-forest-dark font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>Semua Simpul Terkoneksi Radio Satelit</span>
+</div>
+</div>
+</section>
+<!-- Controls Bar: Search & Filter Toolbar -->
+<section class="bg-surface-pure p-space-md rounded-xl shadow-sm space-y-space-md">
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search bar -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[20px] text-moss-muted">search</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg pl-11 pr-space-md py-2.5 focus:outline-none focus:bg-surface-pure focus:shadow-[0_0_0_2px_#184D3B] placeholder:text-moss-muted transition-all" id="memberSearchInput" placeholder="Cari nama kader, wilayah adat, keahlian (mis. Drone, GTID), atau kode anggota..." type="search">
+</div>
+<!-- View Switcher & Quick Map Link -->
+<div class="flex items-center gap-space-xs flex-wrap self-end xl:self-center">
+<div class="inline-flex p-1 rounded-lg bg-surface-container-high" role="group">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-pure text-primary font-label-md text-label-md font-bold shadow-sm transition-all" id="gridToggleBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Kartu (Grid)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="tableToggleBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">table_rows</span>
+<span>Tabel Rinci</span>
+</button>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container text-forest-dark hover:bg-surface-container-high font-label-md text-label-md font-semibold transition-all" href="./cms-sebaran-anggota.html">
+<span class="material-symbols-outlined text-[18px] text-primary">pin_drop</span>
+<span>Buka Peta Sebaran GIS</span>
+</a>
+</div>
+</div>
+<!-- Filter Dropdowns Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs border-t border-surface-container-high">
+<!-- Filter Provinsi -->
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Provinsi Tapak</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none focus:bg-surface-pure focus:shadow-[0_0_0_2px_#184D3B] cursor-pointer">
+<option value="">Semua Wilayah Provinsi</option>
+<option value="maluku">Maluku &amp; Kepulauan Seram</option>
+<option value="kaltim">Kalimantan Timur</option>
+<option value="papua">Papua &amp; Papua Selatan</option>
+<option value="sulteng">Sulawesi Tengah</option>
+<option value="sultra">Sulawesi Tenggara</option>
+<option value="aceh">Aceh &amp; Lanskap Leuser</option>
+<option value="jabar">Jawa Barat &amp; Wilayah Hub Pusat</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-moss-muted pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filter Keahlian -->
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Klaster Keahlian</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none focus:bg-surface-pure focus:shadow-[0_0_0_2px_#184D3B] cursor-pointer">
+<option value="">Semua Keahlian &amp; Spesialisasi</option>
+<option value="gtid">Investigasi GTID &amp; Kayu</option>
+<option value="gis">Kartografi &amp; GIS Partisipatif</option>
+<option value="paralegal">Paralegal &amp; Mediasi Konflik</option>
+<option value="koperasi">Ekonomi Komunal &amp; HHBK</option>
+<option value="drone">Fotogrametri &amp; Pemetaan Drone</option>
+<option value="advokasi">Advokasi Kebijakan &amp; RUA</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-moss-muted pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filter Status Keanggotaan -->
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Status Statuta Keanggotaan</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none focus:bg-surface-pure focus:shadow-[0_0_0_2px_#184D3B] cursor-pointer">
+<option value="">Semua Status Keanggotaan</option>
+<option value="penuh">Anggota Penuh (Hak Suara RUA)</option>
+<option value="pemula">Anggota Pemula / Youth Cadre</option>
+<option value="pengawas">Dewan Pengawas &amp; Inisiator</option>
+<option value="peneliti">Peneliti Lapangan / Tamu</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-moss-muted pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Filter Peran Hak Akses -->
+<div class="space-y-1">
+<label class="block font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Tingkat Hak Akses Portal</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none focus:bg-surface-pure focus:shadow-[0_0_0_2px_#184D3B] cursor-pointer">
+<option value="">Semua Tingkat Akses</option>
+<option value="registered">Registered Member</option>
+<option value="admin">Admin Verifikator Wilayah</option>
+<option value="ranger">Ranger &amp; Pengumpul Data Tapak</option>
+<option value="etik">Komite Etik &amp; Safeguard</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[18px] text-moss-muted pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Active Filter Pill Indicators -->
+<div class="flex items-center gap-space-xs flex-wrap font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-moss-muted">Filter Aktif:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-forest-dark font-medium">
+          Semua Wilayah Nusantara
+          <button class="hover:text-primary"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-forest-dark font-medium">
+          Status: Consent Verified
+          <button class="hover:text-primary"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<button class="text-earth-ochre hover:text-tertiary-container font-semibold ml-2" type="button">Reset Filter</button>
+</div>
+</section>
+<!-- VIEW 1: Member Cards Grid (6 High-Fidelity Representative Profiles) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="membersGridView">
+<!-- Member 1: Annas Radin Syarif -->
+<article class="group bg-surface-pure rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img alt="Annas Radin Syarif" class="w-14 h-14 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida/AEtjO1WcxH93rP18CT_Xbbpfine0BidALH0sZgkeMYOouQUCoa_XP4XT6hxOlmo2UTkrRTr81P9YUhLxRWZCiiscJdy9C5J6OsyCQ_cpCA2ORAwwdsteWfJJQshGg_Y4Mg5xSZujf9PnaZRMB3g-_siyr12FjHtovMCSAeQVL_-UUjIxBjoAFXvZCVju0JzkwVqW9YnfDRlxA-TAGAmX-zMnD9tUTEfk7cVCF6a1Kxn_CuBc_mw4H9IsSTPte30">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary text-surface-pure flex items-center justify-center text-[12px] shadow-sm" title="Consent Verified">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Annas Radin Syarif</h3>
+</div>
+<p class="font-body-sm text-body-sm text-earth-ochre font-semibold truncate">Kartografer &amp; Spesialis GIS Partisipatif</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-MEM-2024-089 • Anggota Penuh</p>
+</div>
+</div>
+<button aria-label="Menu anggota" class="text-moss-muted hover:text-primary p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Territorial & Hub Meta -->
+<div class="p-space-xs rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Wilayah Tapak:
+              </span>
+<span class="font-semibold text-on-surface">Maluku Tengah</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lan</span> Simpul Komunitas:
+              </span>
+<span class="font-semibold text-primary">Hub Maluku &amp; Seram</span>
+</div>
+</div>
+<!-- Badges / Specialties -->
+<div class="space-y-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Kompetensi Lapangan:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Pemetaan Tapak</span>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Drone Mapping</span>
+<span class="px-2.5 py-1 rounded-md bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">GTID Lead</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Aktif di 14 Patroli
+          </span>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-forest-dark font-bold" type="button">
+            Detail Profil <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Member 2: Marthen R. -->
+<article class="group bg-surface-pure rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Close-up portrait of Marthen R., an Indigenous ranger from Saunulu Maluku in the rainforest canopy, wearing field vest and head scarf, natural directional sunlight, rich deep green and earthy tones, realistic photojournalism style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqYsKpR-mzlO-8mWGj-rlH31WCcmWg-UQUH7bYBO3ALsqDvGneA2vecxRuQv3gNjzadl919jcIS0_M54tRPp64sA8CRAk-GKqWbCrEACR-b71WMZcFcCj52Rhv_LVl1SxlU0Q_9wQW19isSR_rxXmTtauRG1Gy2pPNwNbqBsOBmpjD0hnkr0J12XQI3IzLSMOrf0jUmJ2JdyPAmpJi0wZB06X_KA1yh7x3iYle8m7JnYgWrMXIsuRi">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary text-surface-pure flex items-center justify-center text-[12px] shadow-sm" title="Consent Verified">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Marthen R.</h3>
+</div>
+<p class="font-body-sm text-body-sm text-earth-ochre font-semibold truncate">Pemantau Hutan Adat Saunulu</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-RNG-2023-014 • Ranger Lapangan</p>
+</div>
+</div>
+<button aria-label="Menu anggota" class="text-moss-muted hover:text-primary p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Territorial & Hub Meta -->
+<div class="p-space-xs rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Wilayah Tapak:
+              </span>
+<span class="font-semibold text-on-surface">Maluku Tengah (Saunulu)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lan</span> Simpul Komunitas:
+              </span>
+<span class="font-semibold text-primary">Hub Maluku &amp; Seram</span>
+</div>
+</div>
+<!-- Badges / Specialties -->
+<div class="space-y-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Kompetensi Lapangan:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Ground-truthed App</span>
+<span class="px-2.5 py-1 rounded-md bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">Verifikasi Kayu Merbau</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">Navigasi Hutan Rapat</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 38 Laporan Terkirim
+          </span>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-forest-dark font-bold" type="button">
+            Detail Profil <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Member 3: Dina K. Sawang -->
+<article class="group bg-surface-pure rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Editorial portrait of Dina K. Sawang, a Dayak indigenous woman paralegal in Kutai Barat East Kalimantan, warm confident expression, holding legal field folder, natural outdoor ambient lighting in indigenous council hall, deep green and ochre tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAelgs_0kUutm482TXf2EdhgOj1pjDqSOJyM3PNHrByBzu3DvF19BTOgWg_Im696oixeq5-6TJukrfsB-d1R6Q_GnniyniD0Je2Sgmt2bnQJZBoQmyBQruM314o5k3zbqGS2qVMTeusne5KJH33JkjVNYI0TZqYFIPaqOQGpCAgVeGDZn8uXI_nUaoxkjCNsvRtMuSPXyqO_657NvfMaJ03GJ_gYlFore-FRFTyE65PMr5NEC8v53Yt">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary text-surface-pure flex items-center justify-center text-[12px] shadow-sm" title="Consent Verified">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Dina K. Sawang</h3>
+</div>
+<p class="font-body-sm text-body-sm text-earth-ochre font-semibold truncate">Advokasi Paralegal Perempuan Adat</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-MEM-2022-041 • Anggota Penuh</p>
+</div>
+</div>
+<button aria-label="Menu anggota" class="text-moss-muted hover:text-primary p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Territorial & Hub Meta -->
+<div class="p-space-xs rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Wilayah Tapak:
+              </span>
+<span class="font-semibold text-on-surface">Kutai Barat, Kaltim</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lan</span> Simpul Komunitas:
+              </span>
+<span class="font-semibold text-primary">Hub Mahakam &amp; Benuaq</span>
+</div>
+</div>
+<!-- Badges / Specialties -->
+<div class="space-y-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Kompetensi Lapangan:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Investigasi Hak Ulayat</span>
+<span class="px-2.5 py-1 rounded-md bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">Mitigasi Konflik Sawit</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">Safeguard FPIC</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 9 Komunitas Teradvokasi
+          </span>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-forest-dark font-bold" type="button">
+            Detail Profil <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Member 4: Wayan Eka P. -->
+<article class="group bg-surface-pure rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Outdoor portrait of Wayan Eka P., an energetic Indonesian youth fellow in Kendari Sulawesi Tenggara, standing near a community rattan processing warehouse, confident and focused expression, editorial organic tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9xPmm_2f_Cr3Byujy7jDE13_PcCvKbr_sJLEHtIu6ztehsMQ7rAWkNFn7FWZfVPJaLaib5K9ebkoozB1T2OWVIEDyj2gEm50LGCR-ycyOh0O9AYxfWvKNrfOXJhepb_278TxoddrmPojF0hcK6laI-5BTYBE4HsUElW1cJdDPUtYWHjKj6AVZOAK7SgxIm1-TPjw9pKdERay4AipHggubQ53X4IfTjSHA4vZa3Alw1bC3jxRTo49q">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary text-surface-pure flex items-center justify-center text-[12px] shadow-sm" title="Consent Verified">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Wayan Eka P.</h3>
+</div>
+<p class="font-body-sm text-body-sm text-earth-ochre font-semibold truncate">Koordinator KAoem MUda Sulawesi Tenggara</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-FEL-2025-003 • Youth Fellow</p>
+</div>
+</div>
+<button aria-label="Menu anggota" class="text-moss-muted hover:text-primary p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Territorial & Hub Meta -->
+<div class="p-space-xs rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Wilayah Tapak:
+              </span>
+<span class="font-semibold text-on-surface">Konawe &amp; Kendari, Sultra</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lan</span> Simpul Komunitas:
+              </span>
+<span class="font-semibold text-primary">Hub Konawe Selatan</span>
+</div>
+</div>
+<!-- Badges / Specialties -->
+<div class="space-y-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Kompetensi Lapangan:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Ekowisata Komunal</span>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Koperasi HHBK</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">Digital Storytelling</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 2 Koperasi Aktif
+          </span>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-forest-dark font-bold" type="button">
+            Detail Profil <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Member 5: Lukas Waromi -->
+<article class="group bg-surface-pure rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Field portrait of Lukas Waromi, a Papuan spatial investigator standing in peat swamp forest of Boven Digoel, holding a ruggedized GPS unit, soft overcast morning lighting, lush peat greenery, authentic investigative atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoAeHCkQQlJ-5qLci3GBNBGwP2fHGiaineBCSVgn4qWaQibvz6fRp09b5Dbu4Ma9i8xd11AAnLStZskhER4elP9pe4Mu2cMZx85apLchf07j6iVJ4NtDlHt3LMyALLcALrg-dPDPqMCsl-G2m2UT67TWxnwFeyvyXJzqmlpN6uPkbD8m2BD9iU1FDLDKiL2OqBX9GU1aVTQfAFpAbsk_I-Ykv89LGQbIBTnfmFJrXhserd24PbJulU">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary text-surface-pure flex items-center justify-center text-[12px] shadow-sm" title="Consent Verified">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Lukas Waromi</h3>
+</div>
+<p class="font-body-sm text-body-sm text-earth-ochre font-semibold truncate">Pemantau Spasial Hutan Adat Papua</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-INV-2021-019 • Investigator Tapak</p>
+</div>
+</div>
+<button aria-label="Menu anggota" class="text-moss-muted hover:text-primary p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Territorial & Hub Meta -->
+<div class="p-space-xs rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Wilayah Tapak:
+              </span>
+<span class="font-semibold text-on-surface">Boven Digoel, Papua Selatan</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lan</span> Simpul Komunitas:
+              </span>
+<span class="font-semibold text-primary">Hub Anim Ha &amp; Digoel</span>
+</div>
+</div>
+<!-- Badges / Specialties -->
+<div class="space-y-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Kompetensi Lapangan:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">Investigasi Gambut</span>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Pemantauan Konsesi Sawit</span>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Tracking Kayu Gelondong</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 22 Investigasi Terverifikasi
+          </span>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-forest-dark font-bold" type="button">
+            Detail Profil <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Member 6: Silverius Unggul -->
+<article class="group bg-surface-pure rounded-xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm group-hover:scale-105 transition-transform" data-alt="Distinguished documentary portrait of Silverius Unggul, senior Indonesian forestry governance pioneer, warm thoughtful expression in an archival wooden library room, natural side lighting, editorial gravitas and integrity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDznJq-HxKMvq1HxwvQVsxe6eKaWEth28CY8sV9qAjyiNJbkxfv8yJGtfddvnIL72hs9dRS5BQBV5BJtNf5JhT8CD_AKwbWvBXCEaI_oL2GA1wQ7ItjqUqoNHrlkS4aE4N1fl8k7swPemLP_wmJoDBjhAPX0dKHkLja2pD4ppwg0JSIAEYrgXlEq_XtOwZRCQVF0kS3r0SzQZRiWgu_Ag97NAa84X0UviZsA_IYxqyOSL7e-1T6_siW">
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-earth-ochre text-surface-pure flex items-center justify-center text-[12px] shadow-sm" title="Dewan Pengawas">
+<span class="material-symbols-outlined text-[12px]">shield</span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface font-bold truncate">Silverius Unggul</h3>
+</div>
+<p class="font-body-sm text-body-sm text-earth-ochre font-semibold truncate">Inisiator Gerakan &amp; Dewan Pengawas</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-FON-2001-001 • Anggota Kehormatan</p>
+</div>
+</div>
+<button aria-label="Menu anggota" class="text-moss-muted hover:text-primary p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Territorial & Hub Meta -->
+<div class="p-space-xs rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span> Wilayah Koordinasi:
+              </span>
+<span class="font-semibold text-on-surface">Bogor / Konawe Selatan</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-moss-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lan</span> Mandat Statuta:
+              </span>
+<span class="font-semibold text-primary">Rapat Umum Anggota (RUA Lead)</span>
+</div>
+</div>
+<!-- Badges / Specialties -->
+<div class="space-y-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-moss-muted">Fokus Strategis Gerakan:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Tata Kelola Kehutanan</span>
+<span class="px-2.5 py-1 rounded-md bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">SVLK &amp; Akuntabilitas</span>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Etika &amp; Safeguard Gerakan</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container-high flex items-center justify-between">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-earth-ochre font-bold">
+<span class="material-symbols-outlined text-[16px]">military_tech</span> Inisiator Telapak
+          </span>
+<button class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-forest-dark font-bold" type="button">
+            Arsip Statuta <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+<!-- VIEW 2: Detailed Table View (Hidden by default, toggleable via JavaScript) -->
+<div class="hidden bg-surface-pure rounded-xl shadow-sm overflow-x-auto" id="membersTableView">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-label-sm text-label-sm uppercase tracking-wider border-b border-surface-container-high">
+<th class="py-3 px-space-md">Kader Anggota</th>
+<th class="py-3 px-space-md">Peran &amp; Penugasan</th>
+<th class="py-3 px-space-md">Wilayah Tapak</th>
+<th class="py-3 px-space-md">Simpul Komunitas</th>
+<th class="py-3 px-space-md">Keahlian Khusus</th>
+<th class="py-3 px-space-md">Status Consent</th>
+<th class="py-3 px-space-md text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2.5">
+<img alt="Annas Radin Syarif" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WcxH93rP18CT_Xbbpfine0BidALH0sZgkeMYOouQUCoa_XP4XT6hxOlmo2UTkrRTr81P9YUhLxRWZCiiscJdy9C5J6OsyCQ_cpCA2ORAwwdsteWfJJQshGg_Y4Mg5xSZujf9PnaZRMB3g-_siyr12FjHtovMCSAeQVL_-UUjIxBjoAFXvZCVju0JzkwVqW9YnfDRlxA-TAGAmX-zMnD9tUTEfk7cVCF6a1Kxn_CuBc_mw4H9IsSTPte30">
+<div>
+<p class="font-semibold text-on-surface">Annas Radin Syarif</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-MEM-2024-089</p>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-medium text-forest-dark">Kartografer GIS Partisipatif</td>
+<td class="py-3 px-space-md text-on-surface-variant">Maluku Tengah</td>
+<td class="py-3 px-space-md text-primary font-semibold">Hub Maluku &amp; Seram</td>
+<td class="py-3 px-space-md">
+<span class="inline-block px-2 py-0.5 rounded bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">GTID Lead, Drone</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Terverifikasi
+              </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-forest-dark text-surface-pure flex items-center justify-center font-bold text-label-md">MR</div>
+<div>
+<p class="font-semibold text-on-surface">Marthen R.</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-RNG-2023-014</p>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-medium text-forest-dark">Ranger Hutan Adat</td>
+<td class="py-3 px-space-md text-on-surface-variant">Maluku Tengah (Saunulu)</td>
+<td class="py-3 px-space-md text-primary font-semibold">Hub Maluku &amp; Seram</td>
+<td class="py-3 px-space-md">
+<span class="inline-block px-2 py-0.5 rounded bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Ground-truthed, Merbau</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Terverifikasi
+              </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-earth-ochre text-surface-pure flex items-center justify-center font-bold text-label-md">DS</div>
+<div>
+<p class="font-semibold text-on-surface">Dina K. Sawang</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-MEM-2022-041</p>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-medium text-forest-dark">Advokasi Paralegal Dayak</td>
+<td class="py-3 px-space-md text-on-surface-variant">Kutai Barat, Kaltim</td>
+<td class="py-3 px-space-md text-primary font-semibold">Hub Mahakam &amp; Benuaq</td>
+<td class="py-3 px-space-md">
+<span class="inline-block px-2 py-0.5 rounded bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">Hak Ulayat, Sawit</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Terverifikasi
+              </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-container text-surface-pure flex items-center justify-center font-bold text-label-md">WE</div>
+<div>
+<p class="font-semibold text-on-surface">Wayan Eka P.</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-FEL-2025-003</p>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-medium text-forest-dark">Youth Fellow KAoem MUda</td>
+<td class="py-3 px-space-md text-on-surface-variant">Konawe &amp; Kendari, Sultra</td>
+<td class="py-3 px-space-md text-primary font-semibold">Hub Konawe Selatan</td>
+<td class="py-3 px-space-md">
+<span class="inline-block px-2 py-0.5 rounded bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">Koperasi HHBK</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Terverifikasi
+              </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-forest-dark text-surface-pure flex items-center justify-center font-bold text-label-md">LW</div>
+<div>
+<p class="font-semibold text-on-surface">Lukas Waromi</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-INV-2021-019</p>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-medium text-forest-dark">Investigator Spasial Papua</td>
+<td class="py-3 px-space-md text-on-surface-variant">Boven Digoel, Papua Selatan</td>
+<td class="py-3 px-space-md text-primary font-semibold">Hub Anim Ha &amp; Digoel</td>
+<td class="py-3 px-space-md">
+<span class="inline-block px-2 py-0.5 rounded bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">Gambut, Sawit</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Terverifikasi
+              </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-earth-ochre text-surface-pure flex items-center justify-center font-bold text-label-md">SU</div>
+<div>
+<p class="font-semibold text-on-surface">Silverius Unggul</p>
+<p class="font-label-sm text-label-sm text-moss-muted">KT-FON-2001-001</p>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md font-medium text-forest-dark">Inisiator &amp; Dewan Pengawas</td>
+<td class="py-3 px-space-md text-on-surface-variant">Bogor / Konawe Selatan</td>
+<td class="py-3 px-space-md text-primary font-semibold">RUA Lead Nasional</td>
+<td class="py-3 px-space-md">
+<span class="inline-block px-2 py-0.5 rounded bg-secondary-container text-primary font-label-sm text-label-sm font-semibold">SVLK, Kebijakan Adat</span>
+</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-earth-ochre font-bold">
+<span class="material-symbols-outlined text-[14px]">shield</span> Dewan Kehormatan
+              </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary"><span class="material-symbols-outlined text-[18px]">visibility</span></button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Safeguard Metadata Footer -->
+<footer class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md border-t border-surface-container-high">
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-moss-muted">
+<span>Menampilkan <strong>1 – 6</strong> dari <strong>712</strong> Anggota Publik Terverifikasi</span>
+<span class="hidden md:inline">•</span>
+<span class="hidden md:inline">138 Anggota Terenkripsi di Mode Sensitif Lapangan</span>
+</div>
+<!-- Pagination Nav Controls -->
+<div class="flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-lg bg-surface-pure text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-primary text-surface-pure font-label-md text-label-md font-bold shadow-sm" type="button">1</button>
+<button class="w-9 h-9 rounded-lg bg-surface-pure text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold transition-colors" type="button">2</button>
+<button class="w-9 h-9 rounded-lg bg-surface-pure text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold transition-colors" type="button">3</button>
+<span class="px-1 text-moss-muted">...</span>
+<button class="w-9 h-9 rounded-lg bg-surface-pure text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold transition-colors" type="button">119</button>
+<button class="w-9 h-9 rounded-lg bg-surface-pure text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</footer>
+</div>
+<!-- Interactive script for View switcher and Search interaction -->
+<script>
+    (function() {
+      const gridBtn = document.getElementById('gridToggleBtn');
+      const tableBtn = document.getElementById('tableToggleBtn');
+      const gridView = document.getElementById('membersGridView');
+      const tableView = document.getElementById('membersTableView');
+
+      if (gridBtn && tableBtn && gridView && tableView) {
+        gridBtn.addEventListener('click', function() {
+          gridView.classList.remove('hidden');
+          tableView.classList.add('hidden');
+          gridBtn.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-pure text-primary font-label-md text-label-md font-bold shadow-sm transition-all';
+          tableBtn.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all';
+        });
+
+        tableBtn.addEventListener('click', function() {
+          tableView.classList.remove('hidden');
+          gridView.classList.add('hidden');
+          tableBtn.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-pure text-primary font-label-md text-label-md font-bold shadow-sm transition-all';
+          gridBtn.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all';
+        });
+      }
+
+      // Quick filter feedback micro-interaction
+      const searchInput = document.getElementById('memberSearchInput');
+      if (searchInput) {
+        searchInput.addEventListener('input', function(e) {
+          const query = e.target.value.toLowerCase().trim();
+          const cards = gridView ? gridView.querySelectorAll('article') : [];
+          cards.forEach(card => {
+            const cardText = card.innerText.toLowerCase();
+            if (cardText.includes(query)) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="cms-footer">Kaoem Telapak · CMS demo lokal</footer></body></html>
